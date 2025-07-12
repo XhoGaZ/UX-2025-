@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1411.76 1443.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefe7;
+      }
+
+      .cls-2 {
+        fill: #fdc333;
+      }
+
+      .cls-3 {
+        fill: #f7a633;
+      }
+
+      .cls-4 {
+        fill: #f39232;
+      }
+
+      .cls-5 {
+        fill: #e67d2f;
+      }
+
+      .cls-6 {
+        fill: #d8d8da;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="1185.87 341.65 1185.87 97.82 843.3 97.82 705.88 0 568.46 97.82 225.89 97.82 225.89 341.65 0 502.44 0 1443.94 1411.76 1443.94 1411.76 502.44 1185.87 341.65"/>
+  <polygon class="cls-1" points="1185.87 621.22 851.99 796.79 705.88 693.47 562.62 816.75 225.89 628.63 225.89 97.82 1185.87 97.82 1185.87 621.22"/>
+  <polygon class="cls-3" points="0 502.44 0 1443.94 572.9 884.5 0 502.44"/>
+  <polygon class="cls-3" points="838.86 884.5 1411.76 1443.94 1411.76 502.44 838.86 884.5"/>
+  <polygon class="cls-4" points="705.88 754.65 572.9 884.5 0 1443.94 1411.76 1443.94 838.86 884.5 705.88 754.65"/>
+  <polygon class="cls-5" points="0 502.44 572.9 884.5 705.88 754.65 838.86 884.5 1411.76 502.44 851.99 796.79 705.88 693.47 562.62 816.75 0 502.44"/>
+  <g>
+    <rect class="cls-6" x="349.17" y="268.29" width="329.51" height="23.46"/>
+    <rect class="cls-6" x="882.98" y="268.29" width="179.61" height="23.46"/>
+    <rect class="cls-6" x="710.87" y="268.29" width="124.72" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="449.14" width="329.51" height="23.46"/>
+    <rect class="cls-6" x="710.87" y="449.14" width="124.72" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="389.99" width="244.46" height="23.46"/>
+    <rect class="cls-6" x="882.98" y="389.99" width="179.61" height="23.46"/>
+    <rect class="cls-6" x="625.82" y="389.99" width="209.77" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="333.65" width="164.75" height="23.46"/>
+    <rect class="cls-6" x="773.23" y="333.65" width="289.36" height="23.46"/>
+    <rect class="cls-6" x="546.11" y="333.65" width="179.72" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="537" width="329.51" height="23.46"/>
+    <rect class="cls-6" x="882.98" y="537" width="179.61" height="23.46"/>
+    <rect class="cls-6" x="710.87" y="537" width="124.72" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="658.71" width="244.46" height="23.46"/>
+    <rect class="cls-6" x="882.98" y="658.71" width="179.61" height="23.46"/>
+    <rect class="cls-6" x="625.82" y="658.71" width="209.77" height="23.46"/>
+    <rect class="cls-6" x="349.17" y="602.37" width="164.75" height="23.46"/>
+    <rect class="cls-6" x="773.23" y="602.37" width="289.36" height="23.46"/>
+    <rect class="cls-6" x="546.11" y="602.37" width="179.72" height="23.46"/>
+  </g>
+</svg>

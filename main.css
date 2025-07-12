@@ -1,0 +1,1411 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: zekton;
+ 
+   
+    src: url(Fonts/zekton\ rg.otf)
+  
+}
+
+
+
+/********* DESKTOP *********/
+
+
+h1{
+    color: purple;
+    font-family: zekton;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: white;
+    font-family: zekton;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+h3 {
+    color: white;
+    font-family: zekton;
+    font-size: 24px;
+    margin: 10px;
+
+}
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+.glow-strong {
+    color: white;
+    text-shadow: 0 0 3px rgba(0, 0, 255, 0.6), 
+                 0 0 6px rgba(0, 0, 255, 0.4), 
+                 0 0 9px rgba(0, 0, 255, 0.2);
+  }
+
+  .glow-strong-purple {
+    color: purple;
+    text-shadow: 0 0 3px rgba(128, 0, 255, 0.6), 
+                 0 0 6px rgba(128, 0, 255, 0.4), 
+                 0 0 9px rgba(128, 0, 255, 0.2);
+  }
+  
+
+
+.header {
+
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+}
+.header1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 10px;
+    
+}
+.header1-box {
+    width: 60px;
+    height: 60px;
+    background-image: url(Img/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
+    border-color: black;
+ 
+}
+
+.header2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding-right: 55px;
+}
+
+.hamburger-box {
+    width: 70px;
+    height: 50px;
+    background-color: white;
+    z-index: 45;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-right: -30px;
+}
+
+
+.off-screen-menu {
+    background-color: rgb(13, 13, 13);
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 85px;
+    
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .3s ease;
+    z-index: 40;
+    
+}
+
+.icons {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.icons1 {
+    width: 80%;
+    height: 30px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+    
+}
+.icons2 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+.icon {
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+}
+.icon1 {
+    width: 75px;
+    height: 75px;
+    border-style: solid;
+    border-color: purple;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.icon2 {
+    width: 75px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons p {
+    font-size: 15px;
+}
+
+
+.off-screen-menu.active {
+    right: 0;
+
+}
+
+
+
+.hamburger{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    border-left: none;
+    border-right: none;
+    
+    cursor: pointer;
+    z-index: 26;
+}
+
+.hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+
+.hamburger span:nth-child(1) {
+    top: 25%;
+}
+.hamburger span:nth-child(3) {
+    top: 75%;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+}
+.hamburger.active span:nth-child(2) {
+
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.feature {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    z-index: 3;
+   
+    display: flex;
+}
+.elektrik2 img {
+    width: 1500px;
+    height: 1800px;
+    position: absolute;
+    left: -150px;
+    z-index: 2;
+    bottom: 100px;
+
+}
+.feature1 {
+    width: 75%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column; 
+    z-index: 2;
+
+
+}
+.feature2 {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    padding-left: 120px;
+    padding-top: 80px;
+    z-index: 1;
+
+}
+.feature3{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 120px;
+    z-index: 1;
+
+
+}
+.feature4 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(13, 13, 13);
+    display: flex;  
+    padding-left: 60px;
+    padding-top: 30px;
+    z-index: 1;
+
+    
+}
+.feature5 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: purple;
+
+    
+    left: 100px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 1;
+}
+.services {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    position: relative;
+}
+.services1 {
+    width: 20%;
+    height: 100%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 50px;
+    position: relative;
+}
+.services h3 {
+    color: white;
+    margin: 0px;
+}
+.services p {
+    color: white;
+}
+.services2 h3 {
+    padding-top: 10px;
+}
+.services2 {
+    width: 80%;
+    height: 100%;
+    background-color: purple;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.service-box {
+    width: 350px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+        margin: 5px;
+  
+    border-radius: 5px;
+    z-index: 4;
+    position: relative;
+    
+}
+
+.service-box2 {
+    width: 100%;
+    height: 30%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+
+
+}
+
+.service-box3 {
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.service-box4 {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.title-box {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: rgb(13, 13, 13);
+}
+
+.title-box2 {
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(13, 13, 13);
+}
+
+
+
+.line {
+    width: 90px;
+    height: 5px;
+    background-color: lightgray;
+    z-index: 2;
+}
+
+.line2 {
+    width: 45%;
+    height: 5px;
+    background-color: rgb(39, 39, 39);
+
+
+}
+
+
+.title {
+    font-weight: bold;
+   
+}
+.title, .title1 h3 { 
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    z-index: 3;
+
+}
+
+.title1 h3 {
+    color: black;
+}
+
+
+.elektrik {
+
+    width: 100%;
+    height: 500px;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    position: relative;
+    z-index: 3;
+    transition: opacity 0.3s ease-in-out;
+    padding-top: 60px;
+
+
+}
+
+.elektrik1 {
+
+    width: 40%;
+    height: 100%;
+    bottom: 40px;
+    background-color: rgb(13, 13, 13);
+    padding-left: 100px;
+    padding-top: 50px;
+    position: relative;
+
+    
+}
+
+.elektrik2 {
+
+    width: 60%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+
+
+
+}
+
+.image-holder {
+    width: 600px;
+    height: 350px;
+    background-image: url(Img/Elektrik\ Eel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    bottom: 40px;
+    z-index: 3;
+    
+}
+
+.elektrik h3 {
+    margin: 0;
+}
+
+.elektrik p {
+    color: lightgrey;
+}
+.more {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    z-index: 1;
+    border-style: solid;
+    border-color: yellow;
+
+}
+.more:hover {
+    width: 250px;
+    transition: .5s;
+}
+.more h3, .back-btn h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.bigbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow-y: auto;
+   
+}
+
+
+.bigbox.active {
+    display: block;
+}
+
+
+.bigbox.fade-in {
+    opacity: 1;
+}
+
+.bigbox1 {
+    width: 100%;
+    height: 10%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox2 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.bigbox3 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bigbox5 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(13, 13, 13);
+   display: flex;
+   padding-top: 20px;
+}
+.bigbox7 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 60px;
+
+}
+.bigbox8 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.bigbox6 {
+    width: 100%;
+    height: 60%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+.bigbox-detail {
+    width: 450px;
+    height: 70%;
+    background-color: black;
+    background-image: url(Img/Elektrik1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    margin-inline-end: 10px;
+    border-style: solid;
+    border-color: white;
+}
+.bigbox-header {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 320px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bigbox-header1 {
+    width: 200px;
+    height: 50px;
+ 
+}
+
+.highlight {
+    width: 100%;
+    height: 50px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.highlight1 {
+
+    width: 80%;
+    height: 50px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+
+
+}
+
+.highlight2 {
+
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+
+.bigbox-highlight {
+
+    width: 350px;
+    height: 50px;
+    background-color: purple;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bigbox4 {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.back-btn {
+    width: 100px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    font-family: zekton;
+    border-style: solid;
+    border-color: yellow;
+    background-color: black;
+   
+   
+}
+
+    
+
+.avatar {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    border: gray;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  
+    
+}
+.avatar1 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.avatar2 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-top: 30px;
+
+}
+.avatar h3 {
+    margin: 0;
+}
+.avatar p {
+    color: lightgray;
+}
+.image-holder2 {
+    width: 600px;
+    height: 350px;
+    background-color: pink;
+    z-index: 2;
+    background-image: url(Img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    bottom: 25px;
+ 
+}
+.slideshow-container{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+    
+}
+
+.slide-content {
+    width: 70%;
+    height: 600px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    padding-bottom: 50px;
+        position: absolute;
+
+    
+
+    
+}
+.slide-image { 
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: none;
+    
+  
+}
+.slide-text {
+
+    width: 40%;
+    height: 35%;
+    background-color: purple;
+    display: flex;
+    color: white;
+    font-family: zekton;
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+    padding-left: 15px;
+   
+
+    flex-direction: column;
+    
+    border-radius: 5px;
+  
+}
+
+.description p {
+    top: 0;
+}
+.nav-container {
+    margin-top: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 420px;
+    left: 320px;
+}
+.nav-box {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-style: solid;
+    border-color: yellow;
+}
+.active { 
+    display: flex;
+  
+
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.slideshow-container img {
+
+    width: 500px;
+    height: 400px;
+    right: 450px;
+    margin-bottom: 800px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.time {
+
+    width: 120px;
+    height: 50px;
+    left: 0px;
+    position: absolute;
+    bottom: 220px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px;
+
+
+}
+
+.slideshow-container p {
+
+    top: 0px;
+    position: relative;
+} 
+
+.slideshow-container img {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    right: 860px;
+    top: 200px;
+}
+
+.about-me  {
+
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+} 
+.about-me1 {
+
+    width: 15%;
+    height: 100%;
+    background-color: purple;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.about-me1 h3 {
+    margin: 0px;
+    }
+
+.about-me2 {
+
+    width: 85%;
+    height: 100%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.about-me3 {
+
+    width: 45%;
+    height: 80%;
+    border-style: solid;
+    border-color: gray;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+   
+}
+
+.about-me4 {
+
+    width: 45%;
+    height: 80%;
+}
+
+.about-me3-1 {
+
+    width: 100%;
+    height: 20%;
+    background-color: none;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    padding-bottom: 20px;
+  
+}
+.about-me3-2 {
+    width: 100%;
+    height: 30%;
+    background-color: none
+    ;
+    display: flex;
+    padding-left: 65px;
+    padding-right: 50px;
+}
+.about-me3-3 {
+    width: 100%;
+    height: 50%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me3-4 {
+    width: 80%;
+    height: 80%;
+    background-image: url(Img/Adventure.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-me4-4 {
+    width: 80%;
+    height: 80%;
+    background-image: url(Img/Unnormal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-me p {
+    color: lightgray;
+}
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+}
+.footer1 {
+    width: 40%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.footer2 {
+    width: 40%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+}
+.footer2-1 {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+}
+.footer2-2 {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.footer3 {
+    width: 20%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: last baseline;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.footer3-1 {
+    width: 100px;
+    height: 100px;
+    background-image: url(Img/Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-color: white;
+}
+p2 {
+
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.about-me p {
+    top: 0px;
+}
+.bigbox-highlight p {
+    top: 0px;
+}
+.highlight1 p {
+    top: 0px;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 14px;
+        position: relative;
+        top: 20px;
+    }
+
+    .header {
+
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .header1 {
+
+        position: relative;
+        right: 10px;
+
+    }
+
+    .header1-box {
+        width: 40px;
+        height: 35px;
+        background-image: url(Img/Logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-style: solid;
+        border-color: black;
+     
+    }
+
+    .hamburger {
+
+        width: 40px;
+        height: 40px;
+
+    }
+    .hamburger-box {
+        width: 30px;
+        height: 40px;
+      
+    }
+
+    .feature {
+        height: 450px;
+    }
+
+    .elektrik2 img {
+        width: 1200px;
+        height: 1500px;
+        position: absolute;
+        left: -200px;
+        z-index: 2;
+        bottom: 300px;
+    
+    }
+
+    .feature2 {
+        width: 35%;
+        height: 100%;
+        background-color: rgb(13, 13, 13);
+        display: flex;
+        position: relative;
+        padding-right: 100px;
+        padding-top: 95px;
+        z-index: 1;
+    
+    }
+
+    .feature3{
+        width: 100%;
+        height: 70%;
+        background-color: rgb(13, 13, 13);
+        display: flex;
+        flex-direction: column;
+        padding-left: 65px;
+        padding-top: 100px;
+        z-index: 1;
+    
+    
+    }
+
+    .feature4 {
+      width: 100%;
+    height: 40%;
+    background-color: rgb(13, 13, 13);
+    display: flex;  
+    position: relative;
+    right: 80px;
+    
+    padding-top: 20px;
+    z-index: 1;
+
+        
+    }
+
+    .feature5 {
+        width: 150px;
+        height: 100px;
+   
+    position: relative;
+    right: 80px;
+    bottom: 30px;
+    
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 1;
+    }
+
+    .header2 {
+        width: 50%;
+        height: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: white;
+        padding-right: 55px;
+        padding-top: 20px;
+    }
+
+    .hamburger-box {
+        width: 60px;
+        height: 50px;
+        background-color: white;
+        z-index: 45;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: -30px;
+    }
+
+    .services {
+        width: 100%;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(13, 13, 13);
+        position: relative;
+    }
+
+    .services1 {
+        width: 100%;
+        height: 10%;
+        background-color: purple;
+        display: flex;
+        padding-left: 65px;
+        padding-top: 35px;
+        position: relative;
+    }
+
+    .services2 {
+        width: 100%;
+        height: 80%;
+        background-color: purple;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+       
+    }
+
+    .service-box {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+        margin: 5px;
+  
+    border-radius: 5px;
+    z-index: 4;
+    position: relative;
+    
+}
+
+    .service-box2 {
+    width: 100%;
+    height: 35%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.service-box3 {
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.service-box4 {
+    width: 100%;
+    height: 65%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.title-box {
+  
+    display: flex;
+    
+    
+    height: 60px;
+    width: 100%;
+    background-color: rgb(13, 13, 13);
+}
+.title-box h3 {
+    padding-bottom: 100px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.line {
+    width: 60px;
+    height: 5px;
+    background-color: lightgray;
+    z-index: 2;
+    position: relative;
+    bottom: 50px;
+}
+
+.elektrik {
+
+    width: 100%;
+    height: 500px;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.elektrik1 {
+
+    width: 100%;
+    height: 70%;
+    background-color: rgb(13, 13, 13);
+    position: relative;
+
+    
+}
+
+.elektrik2 {
+
+    width: 100%;
+    height: 30%;
+    background-color: rgb(13, 13, 13);
+    padding-right: 35px;
+    display: flex;
+    position: relative;
+    z-index: 3;
+
+}
+
+.image-holder {
+    width: 250px;
+    height: 200px;
+    background-image: url(Img/Elektrik\ Eel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 3;
+    
+}
+.more {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    top: 250px;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    border-style: solid;
+    border-color: yellow;
+
+}
+
+.elektrik h3 {
+    margin: 0;
+    
+}
+
+.elektrik p {
+    color: lightgrey;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

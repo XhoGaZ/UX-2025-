@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,700&display=swap"
+        rel="stylesheet">
+        <title>GSAP ScrollTrigger Scrubbing</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="main.css">
+    <!-- ICONS  -->
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!--Greensock-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <div class="header">
+       
+        <div class="header1">
+            <div class="header1-box"></div>
+        </div>
+        <div class="header2">
+            <div class="hamburger-box">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </div>
+
+        <div class="off-screen-menu">
+
+            <div class="icons">
+                <div class="icons1" > <h3 style="margin: 0px;" >Work</h3> </div>
+                <div class="icons2">
+                    <div class="icon" >
+                        <div  id="scroll-box"  class="icon1"  style="background-image: url(Img/Service!.svg);" ></div>
+                        <div class="icon2"> <p style="top: 0px;" >Services</p> </div>
+                    </div>
+                    <div class="icon">
+                        <div  id="scroll-box1" class="icon1"  style="background-image: url(Img/Project.svg);" ></div>
+                        <div class="icon2"> <p style="top: 0px;" >Projects</p> </div>
+                    </div>
+                    <div class="icon">
+                        <div  id="scroll-box2" class="icon1"  style="background-image: url(Img/Icon1.svg);" ></div>
+                        <div class="icon2"> <p style="top: 0px;" >Breakdown</p> </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="icons">
+                <div class="icons1" > <h3 style="margin: 0px;" >Me</h3> </div>
+                <div class="icons2">
+                    <div class="icon">
+                        <div  id="scroll-box3" class="icon1" style="background-image: url(Img/Profile.svg);" ></div>
+                        <div class="icon2"> <p style="top: 0px;" >About Me</p> </div>
+                    </div>
+                    <div class="icon">
+                        <div id="scroll-box4" class="icon1"  style="background-image: url(Img/Envelope.svg);" ></div>
+                        <div class="icon2"> <p style="top: 0px;" >Contact</p> </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            
+
+
+
+
+    
+            
+
+        </div>
+    </div>
+    <div class="feature">
+        <div class="feature1">
+         
+            <div class="feature3">
+                <h1  class="glow-strong" >Robin</h1>
+                <h1  class="glow-strong" >Hammargren</h1>
+                <h1  class="glow-strong" >Roos</h1>
+                <p>“My desire is to create applications that go beyond normal.</p>
+                
+            </div>
+            <div class="feature4">
+                <div class="feature5">
+                    <h3>Uniqueness</h3>
+                    <h3>Elegance</h3>
+                    <h3>Passion</h3>
+                </div>
+            </div>
+        </div>
+        <div class="feature2">
+            <h3>UX Design Portfolio</h3>
+        </div>          
+    </div>
+    <div id="services" class="services">
+     
+        <div class="services1">
+            <h3>Top</h3>
+            <h3>Services</h3>
+        </div>
+        <div class="services2">
+            <div class="service-box">
+                <div class="service-box2">
+                    <div class="service-box3" style="background-image: url(Img/Design1.svg)"></div>
+                </div>
+                <div class="service-box4">
+                    <h3>Web Design</h3>
+                    <p>Research competitors, user flows, empathy maps, personas</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-box2">
+                    <div class="service-box3" style="background-image: url(Img/Design2!.svg);"></div>
+                </div>
+                <div class="service-box4">
+                    <h3>Mobile Design</h3>
+
+                    <p>Research competitors, user flows, empathy maps, personas</p>
+                </div>
+
+            </div>
+            <div class="service-box">
+                <div class="service-box2">
+                    <div class="service-box3" style="background-image: url(Img/UX\ Research.svg);"  ></div>
+                </div>
+                <div class="service-box4">
+                    <h3>UX Design</h3>
+
+                    <p>Research competitors, user flows, empathy maps, personas</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="title-box">
+        <div class="line"></div>
+        <div class="title"><h3 style="text-transform: uppercase;" >Previous Work</h3></div>
+                <div class="line"></div>
+
+        </div>
+
+    <div class="elektrik"> 
+
+    
+        <div class="elektrik1">
+
+          
+            <h3>Elektrik Eel Festival</h3>
+            <p>In this project, I designed the UI of a website</p> 
+            <p>for an electronic music festival. The mission was</p>
+            <p>to design a UI that reflected the target audience and</p>
+            <p>their personality: sophistication, maturity, and energy.</p>
+            <br>
+            <p>I went through many different ideas and variations.</p>
+            <p>Upon altering the style and layout I found</p>
+            <p>the right combination and most importantly</p>
+            <p>the correct balance</p>
+            <div class="more"   onclick="openBigBox('elektrik')"><h3 class="glow-strong" >More</h3></div>  
+
+        
+        </div>
+     
+        <div class="elektrik2">
+            <img src="Img/My Tree.svg" alt="">
+
+            <div class="image-holder"></div>
+        </div>
+
+    </div>
+
+    <div class="bigbox" id="elektrikbigbox">
+
+        <div class="bigbox1"> 
+            <div class="back-btn"  onclick="closeBigBox('elektrik')"> <h3>Back</h3> </div>
+
+            <h3>Elektrik Eel Festival</h3>
+        </div>
+        <div class="bigbox2">
+            <div class="bigbox3">
+                <div class="bigbox5">
+                    <div class="bigbox7">
+                        <p>During the begining, I spent much time analyzing 
+                            websites dedicated for music. I looked for 
+                            patterns and themes. As the client wanted a 
+                            senior yet energetic vibe, I put much effort into 
+                            a style guide. I started off with a minimalistic design 
+                            and slowly added all the essentials one by one. My 
+                            wireframes changed throughout the process with various 
+                            tweaks to contrast and the postionoing of my 
+                            elements. 
+                        
+                        </p>
+                    </div>
+                    <div class="bigbox8">
+                        <p>With little experience coding, this phase took me a lot of
+                            effort and dedication. At first, my code was badly 
+                            structured. I ended up re-formating all of my css
+                            and HTML. The outcome of this project became great 
+                            in the end. Despite my little experience the main 
+                            objective, being the UI design, was a success. It 
+                            delivered by being visually consistent and nailed 
+                            the specific feel and look the client searched for. 
+                        </p>
+                    </div>
+
+                </div>
+                <div class="bigbox6">
+                    <div class="bigbox-header"> <h3 style="margin: 0px;" >Images</h3> </div>
+                    <div class="bigbox-detail"></div>
+                    <div class="bigbox-detail"  style="background-image: url(Img/Elektrik2.png);"  ></div>
+
+                </div>
+
+            </div>
+            <div class="bigbox4">
+
+                <div class="highlight"  style="right: 150px;" > <h3>Highlights</h3> </div>
+                <div class="highlight2">
+                    <div class="highlight1" style="background-color: purple;"  > <p>Challenge</p> </div>
+                    <p> 1. Implemantation of images </p>
+                    <p> 2. Use and structure of my code</p>
+                </div>
+
+                <div class="highlight2">
+                    <div class="highlight1" style="background-color: purple;" > <p>Goal</p> </div>
+                    <p> 1. A premium and sophisticated UI  </p> 
+
+                </div>
+
+                <div class="highlight2">
+                    <div class="highlight1" style="background-color: purple;" > <p>Lesson</p> </div>
+                    <p> 1. A clear design </p>
+                    <p> 2. More time towards coding </p> 
+
+                </div>
+
+
+
+               
+
+
+            </div>
+
+    
+
+
+        </div>
+      
+    </div>
+   
+    <div class="avatar">
+        
+        <div class="avatar1">
+            <div class="image-holder2"></div>
+        </div>
+        <div class="avatar2">
+            <h3>Metaverse Avatar App</h3>
+            <p> Metaverse Avatar Mobile Application - UX & UI Design  </p>
+                <p>  During twelve weeks I developed and designed an avatar</p>
+                <p>  mobile application. I documented the current state </p>
+                <p>  of things each week and followed outlined kanban </p>
+                <p> boards and project breakdowns.</p>
+                <div class="more"  onclick="openBigBox('avatar')" > <h3 class="glow-strong "  >More</h3> </div>
+
+          
+        </div>
+
+        <div class="bigbox" id="avatarbigbox">
+
+            <div class="bigbox1"> 
+                <div class="back-btn"  onclick="closeBigBox('avatar')"> <h3>Back</h3> </div>
+    
+                <h3>Metaverse Avatar Application</h3>
+            </div>
+            <div class="bigbox2">
+                <div class="bigbox3">
+                    <div class="bigbox5">
+                        <div class="bigbox7">
+                            <p> I was tasked with designing a metaverse avatar application for a school. 
+                                This application was to give students the option to create their own avatar. An avatar 
+                                they could identify with. With this avatar they would be able to customize their 
+                                clothes, shape and equipment. <br> <br> Much work went to understanding the needs and pain points of the users. 
+                                This was achieved through a empathy map and a user flow chart. 
+                            
+                            </p>
+                        </div>
+                        <div class="bigbox8">
+                            <p> My low-fidelity prototype was quickly updated to a medium-fidelity prototype.
+                                The next step was getting feedback and refining my work. After careful
+                                reflection small changes was made here and there. Many alterations led to
+                                new insights that would ultimately transform the design. 
+
+                            </p>
+                        </div>
+    
+                    </div>
+                    <div class="bigbox6">
+                        <div class="bigbox-header"> <h3 style="margin: 0px;" >Images</h3> </div>
+                        <div class="bigbox-detail"  style="background-image: url(Img/Avatar1.png);" ></div>
+                        <div class="bigbox-detail"  style="background-image: url(Img/Avatar2.png);" ></div>
+    
+                    </div>
+    
+                </div>
+                <div class="bigbox4">
+    
+                    <div class="highlight"  style="right: 150px;" > <h3>Highlights</h3> </div>
+                    <div class="highlight2">
+                        <div class="highlight1" style="background-color: purple;"  > <p>Challenge</p> </div>
+                        <p> 1. Refining my prototype <br>
+                            2. Satisfying all users
+                        </p>
+                    </div>
+    
+                    <div class="highlight2">
+                        <div class="highlight1" style="background-color: purple;" > <p>Goal</p> </div>
+                        <p> 1. An avatar that people feel a <br> connection to 
+                             
+                        </p> 
+    
+                    </div>
+    
+                    <div class="highlight2">
+                        <div class="highlight1" style="background-color: purple;" > <p>Lesson</p> </div>
+                        <p> 1. Understanding the core needs <br> of the users <br> 
+                            2. A great balance between <br> design and function </p> 
+    
+                    </div>
+    
+    
+    
+                   
+    
+    
+                </div>
+    
+        
+    
+    
+            </div>
+          
+        </div>
+       
+
+    </div>
+
+    <div class="title-box">
+                <div class="line"></div>
+
+        <div class="title"><h3  style="text-transform: uppercase;">Project Breakdown</h3></div>
+        <div class="line"></div>
+
+        </div>
+
+    </div>
+    
+    <div class="slideshow-container">
+                                            <img src="Img/Leaf 2.svg" alt="">
+
+
+
+        <div class="slide-content active">
+
+            <div class="slide-image" style="background-image: url(Img/3,1.png);"></div>
+            <div class="slide-text"> 
+                <div class="time">
+                    <p>Week: 1-4</p>
+                </div>
+                <br>
+                <p>This is the original wireframe that I used to </p>
+                <p>structure my UI and evaluate what I needed</p>
+                <p>to include</p></div>
+        </div>
+
+            <div class="slide-content">
+                <div class="slide-image" style="background-image: url(Img/2.png);"></div>
+                <div class="slide-text"> 
+                    <div class="time">
+                        <p>Week: 5-8</p>
+                    </div>
+                    <br>
+                    <p> After sketching and deciding upon a specific <br> layout I started designing important features.</p>
+                   
+                    <p>Much work went into getting the right</p>
+                    <p>proportions and structure.</p>
+                 
+                </div>
+            </div>
+
+            <div class="slide-content">
+                <div class="slide-image" style="background-image: url(Img/1.png)"></div>
+                <div class="slide-text">
+                    <div class="time">
+                        <p>Week: 9-12</p>
+                    </div>
+                    <br>
+                    <p>The last four weeks of the project were focused <br> on refining and iterations. After feedback and</p>
+                    <p>  further testing, I found better hierarchy,</p>
+                    <p> structure, and contrast. It all ended up looking</p>
+                    <p>looking more refined with more engagment.</p>
+                    <p></p>
+                </div>
+            </div>
+
+          
+
+       
+        <div class="nav-container">
+            <div class="nav-box disabled" onclick="changeSlide(0)"> <h3 class="glow-strong" >1</h3></div>
+            <div class="nav-box" onclick="changeSlide(1)"><h3 class="glow-strong" >2</h3></div>
+            <div class="nav-box" onclick="changeSlide(2)"><h3 class="glow-strong" >3</h3></div>
+
+
+        </div>
+        </div>
+
+        <div class="about-me">
+            <div class="about-me1">
+                <h3 >About</h3>
+                <h3 >Me</h3></div>
+                <div class="about-me2">
+                    <div class="about-me3">
+                        <div class="about-me3-1"> <h3>Story</h3></div>
+                        <div class="about-me3-2"> <p>In 2022 I embarked upon the biggest journey of <br> my life. That was coming to Australia alone to<br> study UX  & Web Design. I left friends and family <br> to fufill my dream. With a finished Diploma in UX, <br> I am hungry to put my skills to work. </p></div>
+                        <div class="about-me3-3">
+                            <div class="about-me3-4"></div>
+                        </div>
+                    </div>
+                    <div class="about-me4">
+                        <div class="about-me3-1"> <h3>Personality</h3></div>
+                        <div class="about-me3-2"> <p>I'm a very energetic and passionate person. If I <br> want something I will always try my best. I am detail oriented and eager to explore new ideas and approaches. Because I am confident, I usually go against what's <br> normal in my pursuit of that little extra. </p></div>
+                        <div class="about-me3-3">
+                            <div class="about-me4-4"></div>
+                    </div>
+
+                </div>
+        </div> 
+        </div>
+        <div class="footer">
+            <div class="footer1"> <h3>UX & Web Design Portfolio</h3></div>
+            <div class="footer2">
+                <div class="footer2-1"> <p>Contact  <br> <br> -e-mail <br> <p2>robinhammargren09@gmail.com</p2><br> <br> -phone <br> <p2>0468753465</p2></p></div>
+                <div class="footer2-2"> <p>Resume  <br><br> -seek <br> <a href="PDF/My Resume.pdf" style="color: white;" download> <p2>download (PDF)</p2></a>
+                </p></div>
+                
+            </div>
+            <div class="footer3">
+                <div class="footer3-1"></div>
+            </div>
+
+            
+        </div>
+
+    
+       
+    
+
+
+   
+
+  
+       
+            
+   
+
+
+
+
+
+    
+
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+
+</body>
+
