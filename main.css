@@ -1136,6 +1136,8 @@ p2 {
 
     .feature {
         height: 450px;
+            background-color: rgb(13, 13, 13);
+
     }
 
     .elektrik2 img {
@@ -1318,21 +1320,21 @@ p2 {
 .title-box {
   
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 0px;
+    position: relative;
+    padding-top: 50px;
     
    
     
     
-    height: 50px;
+    height: 150px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(13, 13, 13);
 }
 .title-box h3 {
     font-size: 16px;
     font-weight: bold;
-    margin: 0px;
+    margin: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -1347,13 +1349,14 @@ p2 {
 .elektrik {
 
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: rgb(13, 13, 13);
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 3;
     transition: opacity 0.3s ease-in-out;
+    padding-right: 40px;
 
 }
 
@@ -1364,8 +1367,12 @@ p2 {
     background-color: rgb(13, 13, 13);
     position: relative;
 
-    
 }
+
+.elektrik1 .more h3 {
+    left: 0px;
+}
+
 
 .elektrik2 {
 
@@ -1376,6 +1383,7 @@ p2 {
     display: flex;
     position: relative;
     z-index: 3;
+    bottom: 80px;
 
 }
 
@@ -1403,18 +1411,69 @@ p2 {
     z-index: 10;
     border-style: solid;
     border-color: yellow;
+    right: 20px;
+
 
 }
 
 .elektrik h3 {
     margin: 0;
+    position: relative;
+    right: 20px;
     
 }
 
 .elektrik p {
     color: lightgrey;
+    right: 20px;
 }
 
+.avatar {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border: gray;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+  
+    
+}
+.avatar1 {
+    width: 100%;
+    height: 50%;
+    background-color: green;
+    display: flex;
+    position: relative;
+
+    padding-right: 115px;
+}
+.avatar2 {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(13, 13, 13);
+    position: relative;
+    padding-left: 80px;
+    bottom: 200px;
+
+}
+.image-holder2 {
+     width: 250px;
+    height: 200px;
+    background-color: pink;
+    z-index: 2;
+    background-image: url(Img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 300px;
+
+
+ 
+}
 
 
 
