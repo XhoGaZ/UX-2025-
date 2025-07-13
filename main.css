@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -261,13 +261,15 @@ p {
    
     display: flex;
 }
+
+
 .elektrik2 img {
     width: 1500px;
     height: 1800px;
     position: absolute;
     left: -150px;
     z-index: 2;
-    bottom: 100px;
+    bottom: 0px;
 
 }
 .feature1 {
@@ -503,9 +505,8 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: visible;
     z-index: 3;
-
-
 
 }
 
@@ -1141,14 +1142,16 @@ p2 {
     }
 
     .elektrik2 img {
-        width: 1200px;
-        height: 1500px;
+        width: 1500px;
+        height: 2000px;
+        transform: translate(-5%) scale(0.75);
+
         position: absolute;
-        left: 0px;
         z-index: 2;
-        bottom: 300px;
+        bottom: 200px;
     
     }
+   
 
     .feature2 {
         width: 35%;
