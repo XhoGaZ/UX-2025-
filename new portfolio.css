@@ -64,12 +64,7 @@ p {
     text-shadow: 0 0 3px rgba(128, 0, 255, 0.6), 
                  0 0 6px rgba(128, 0, 255, 0.4), 
                  0 0 9px rgba(128, 0, 255, 0.2);
-}
-
-span {
-    color: purple;
-    font-weight: bold;
-}
+  }
   
 
 
@@ -131,7 +126,7 @@ span {
     background-color: rgb(13, 13, 13);
     height: 100%;
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     position: fixed;
     top: 0;
     right: -450px;
@@ -148,63 +143,42 @@ span {
     
 }
 
-.icons0 {
+.icons {
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     
 }
 .icons1 {
     width: 80%;
-    height: 40px;
+    height: 30px;
     background-color: purple;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 10px;
-    right: 8px;
+    left: 30px;
     
 }
 .icons2 {
-
     width: 100%;
-    height: 50px;
-    background-color: purple;
+    height: 150px;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-
+    padding-left: 20px;
+    padding-top: 20px;
+    
 }
-.icons2-1 {
-    width: 30%;
-    height: 100%;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.icons2-2 {
-    width: 70%;
-    height: 100%;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    justify-content: first baseline;
-    align-items: center;
-}
-
 .icon {
-    width: 50px;
-    height: 50px;
-   
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
 }
 .icon1 {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-style: solid;
-    border-color: lightgray;
+    border-color: purple;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -220,10 +194,8 @@ span {
     justify-content: center;
 }
 
-.off-screen-menu p {
-    font-size: 16px;
-    top: 0px;
-    right: 15px;
+.icons p {
+    font-size: 15px;
 }
 
 
@@ -231,6 +203,8 @@ span {
     right: 0;
 
 }
+
+
 
 .hamburger{
     width: 50px;
@@ -255,6 +229,7 @@ span {
     transition: .3s ease;
 }
 
+
 .hamburger span:nth-child(1) {
     top: 25%;
 }
@@ -276,6 +251,7 @@ span {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+
 .feature {
     width: 100%;
     height: 700px;
@@ -293,7 +269,7 @@ span {
     position: absolute;
     left: -150px;
     z-index: 2;
-    bottom: 100px;
+    bottom: 0px;
 
 }
 .feature1 {
@@ -333,6 +309,7 @@ span {
     height: 40%;
     background-color: rgb(13, 13, 13);
     display: flex;  
+    padding-left: 60px;
     padding-top: 30px;
     z-index: 1;
 
@@ -342,8 +319,7 @@ span {
     width: 300px;
     height: 200px;
     position: relative;
-    border-color: purple;
-    border-style: solid;
+    background-color: purple;
 
     
     left: 100px;
@@ -426,7 +402,6 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  
 
 }
 .service-box4 {
@@ -468,7 +443,13 @@ span {
     z-index: 2;
 }
 
+.line2 {
+    width: 45%;
+    height: 5px;
+    background-color: rgb(39, 39, 39);
 
+
+}
 
 
 .title {
@@ -509,7 +490,7 @@ span {
     bottom: 40px;
     background-color: rgb(13, 13, 13);
     padding-left: 100px;
-    padding-top: 60px;
+    padding-top: 50px;
     position: relative;
 
     
@@ -596,6 +577,47 @@ span {
     opacity: 1;
 }
 
+.bigbox1 {
+    width: 100%;
+    height: 10%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox2 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.bigbox3 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bigbox5 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(13, 13, 13);
+   display: flex;
+   padding-top: 20px;
+}
+.bigbox7 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 60px;
+
+}
+.bigbox8 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .bigbox6 {
     width: 100%;
     height: 100%;
@@ -609,7 +631,7 @@ span {
     width: 400px;
     height: 200px;
     background-color: black;
-    background-image: url(Img/elektrik\ eel\ process.png);
+    background-image: url(Img/Elektrik1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -652,12 +674,30 @@ span {
     padding-top: 30px;
 }
 
+.back-btn {
+    width: 100px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    font-family: zekton;
+    border-style: solid;
+    border-color: yellow;
+    background-color: black;
+   
+   
+}
 
 .new-elektrik {
     width: 100%;
     height: 900px;
+    display: flex;
     position: relative;
-    background-color: rgb(13, 13, 13);
+        background-color: rgb(13, 13, 13);
 
 }
 
@@ -680,13 +720,13 @@ width: 35%;
 }
 .new-elektrik2 {
 width: 25%;
-padding-top: 15px;
+padding-top: 20px;
 
    
 }
 .new-elektrik3 {
     width: 40%;
-    background-color: rgb(13, 13, 13);
+    background-color: blue;
     
 }
 .highlight {
@@ -697,7 +737,7 @@ padding-top: 15px;
     align-items: center;
     position: relative;
     margin-bottom: 20px;
-    padding-left: 25px;
+    padding-left: 30px;
     padding-bottom: 50px;
     
 }
@@ -735,19 +775,14 @@ padding-top: 15px;
 .new-elektrik h3 {
     margin: 0px;
 }
-.new-avatar h3 {
-    margin: 0px;
-}
 .new-elektrik p {
-    color: lightgray;
-}
-.new-avatar p {
     color: lightgray;
 }
 
 .hidden {
     display: none;
 }
+
 
 .close-button {
      width: 150px;
@@ -814,45 +849,8 @@ padding-top: 15px;
     background-position: top;
     position: relative;
     bottom: 25px;
+ 
 }
-
-.new-avatar {
-    width: 100%;
-    height: 900px;
-    position: relative;
-    background-color: rgb(13, 13, 13);
-}
-.new-avatar0 {
-    width: 100%;
-    height: 85%;
-    padding-top: 50px;
-    display: flex;
-    border-style: solid;
-    border-color: purple;
-    border-top: none;
-    
-}
-
-.new-avatar1 {
-width: 35%;
-    background-color: rgb(13, 13, 13);
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 40px;
-}
-.new-avatar2 {
-width: 25%;
-padding-top: 15px;
-
-   
-}
-.new-avatar3 {
-    width: 40%;
-    background-color: rgb(13, 13, 13);
-    
-}
-
-
 .slideshow-container{
     width: 100%;
     height: 750px;
@@ -861,7 +859,8 @@ padding-top: 15px;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-     
+    
+    
 }
 
 .slide-content {
@@ -874,6 +873,9 @@ padding-top: 15px;
     padding-bottom: 50px;
         position: absolute;
 
+    
+
+    
 }
 .slide-image { 
     width: 50%;
@@ -889,10 +891,7 @@ padding-top: 15px;
 
     width: 40%;
     height: 35%;
-    background-color: rgb(13, 13, 13);
-    border-color: purple;
-    border-style: solid;
-
+    background-color: purple;
     display: flex;
     color: white;
     font-family: zekton;
@@ -941,9 +940,18 @@ padding-top: 15px;
     opacity: 0.5;
 }
 
+.slideshow-container img {
 
+    width: 500px;
+    height: 400px;
+    right: 450px;
+    margin-bottom: 800px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
 
 .time {
+
     width: 120px;
     height: 50px;
     left: 0px;
@@ -955,6 +963,8 @@ padding-top: 15px;
     justify-content: center;
     font-weight: 600;
     border-radius: 5px;
+
+
 }
 
 .slideshow-container p {
@@ -968,7 +978,7 @@ padding-top: 15px;
     height: 500px;
     position: relative;
     right: 260px;
-    bottom: 500px;
+    bottom: 100px;
     z-index: 1;
 }
 
@@ -1010,6 +1020,7 @@ padding-top: 15px;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
+   
 }
 
 .about-me4 {
@@ -1027,7 +1038,7 @@ padding-top: 15px;
     align-items:last baseline;
     justify-content: center;
     padding-bottom: 20px;
-
+  
 }
 .about-me3-2 {
     width: 100%;
@@ -1199,66 +1210,6 @@ p2 {
 
     }
 
-    .off-screen-menu {
-    background-color: rgb(13, 13, 13);
-    height: 100%;
-    width: 100%;
-    max-width: 250px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 85px;
-    
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition: .3s ease;
-    z-index: 40;
-    
-}
-
-.icons0 {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.icons2 {
-
-    width: 100%;
-    height: 50px;
-    background-color: purple;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-
-}
-
-.icons2-1 {
-    width: 30%;
-    height: 100%;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-}
-.icons2-2 {
-    width: 70%;
-    height: 100%;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    justify-content: first baseline;
-    align-items: center;
-    padding-left: 20px;
-}
-
     .elektrik2 img {
         width: 1500px;
         height: 2000px;
@@ -1266,7 +1217,7 @@ p2 {
 
         position: absolute;
         z-index: 2;
-        bottom: 280px;
+        bottom: 200px;
     
     }
    
@@ -1302,7 +1253,7 @@ p2 {
     background-color: rgb(13, 13, 13);
     display: flex;  
     position: relative;
-    right: 0px;
+    right: 80px;
     
     padding-top: 20px;
     z-index: 1;
@@ -1313,9 +1264,9 @@ p2 {
     .feature5 {
         width: 150px;
         height: 100px;
-        left: 65px;
    
     position: relative;
+    right: 80px;
     bottom: 30px;
     
   
@@ -1354,7 +1305,7 @@ p2 {
 
     .services {
         width: 100%;
-        height: 900px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         background-color: purple;
@@ -1363,40 +1314,42 @@ p2 {
 
     .services1 {
         width: 100%;
-        height: 5%;
+        height: 10%;
         background-color: purple;
         display: flex;
         justify-content: center;
         align-items: center;
-         padding-left: 0px;
+        padding-right: 100px;
         
         position: relative;    
     
+    flex-direction: row;
+   
     }
+
 
     .services1 h3 {
 
         margin: 3px;
-        z-index: 4;
         
     }
 
     .services2 {
         width: 100%;
-        height: 95%;
+        height: 90%;
         background-color: purple;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 0px;
+        padding-top: 20px;
        
     }
 
     .service-box {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     background-color: purple;
@@ -1462,13 +1415,13 @@ p2 {
     width: 60px;
     height: 5px;
     background-color: lightgray;
-    z-index: 4;
+    z-index: 5;
 }
 
 .elektrik {
 
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: rgb(13, 13, 13);
     display: flex;
     flex-direction: column;
@@ -1502,7 +1455,7 @@ p2 {
     display: flex;
     position: relative;
     z-index: 3;
-    bottom: 120px;
+    bottom: 80px;
 
 }
 
@@ -1515,20 +1468,19 @@ p2 {
     background-position: top;
     position: relative;
     z-index: 3;
-    margin-top: 70px;
     
 }
-.small-button {
-    width: 120px;
-    height: 40px;
+.more {
+    width: 100px;
+    height: 35px;
     display: flex;
-    top: 300px;
+    top: 250px;
     
     justify-content: center;
     align-items: center;
     position: relative;
     cursor: pointer;
-    z-index: 3;
+    z-index: 10;
     border-style: solid;
     border-color: yellow;
     right: 20px;
@@ -1548,14 +1500,10 @@ p2 {
     right: 20px;
 }
 
-.small-button h3 {
-    left: 0px;
-}
-
 .avatar {
     width: 100%;
-    height: 700px;
-    background-color: rgb(13, 13, 13);
+    height: 500px;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     border: gray;
@@ -1568,12 +1516,11 @@ p2 {
 .avatar1 {
     width: 100%;
     height: 50%;
-    background-color: rgb(13, 13, 13);
+    background-color: green;
     display: flex;
     position: relative;
 
     padding-right: 115px;
-    padding-top: 120px;
 }
 .avatar2 {
     width: 100%;
@@ -1581,7 +1528,7 @@ p2 {
     background-color: rgb(13, 13, 13);
     position: relative;
     padding-left: 80px;
-    bottom: 270px;
+    bottom: 200px;
 
 }
 .image-holder2 {
@@ -1594,407 +1541,11 @@ p2 {
     background-size: cover;
     background-position: top;
     position: relative;
-    top: 200px;
-}
-
-.avatar .small-button  {
-    width: 120px;
-    height: 40px;
-    display: flex;
-    top: 260px;
-    
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    z-index: 3;
-    border-style: solid;
-    border-color: yellow;
-    right: 0px;
-}
-.slideshow-container{
-    width: 100%;
-    height: 800px;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-     
-}
+    top: 300px;
 
 
-.slide-content {
-    width: 100%;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: none;
-    padding-bottom: 0px;
-
-}
-.slide-image { 
-    width: 50%;
-    height: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: none;
-    
-  
-}
-.slide-text {
-
-    width: 70%;
-    height: 45%;
-    background-color: none;
-    display: flex;
-    color: white;
-    font-family: zekton;
-    font-size: 20px;
-    position: relative;
-    padding-left: 15px;
-    left: 0px;
-    top: 20px;
-   
-
-    flex-direction: column;
-    
-    border-radius: 5px;
-}
-.nav-container {
-    position: absolute;
-    display: flex;
-    left: 150px;
-    margin-bottom: 280px;
-    left: 165px;   
-   
-    flex-direction: row;
-
-}
-.nav-box {
-    height: 40px;
-    width: 40px;
-    margin: 5px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-style: solid;
-    border-color: yellow;
-    z-index: 1;
-}
-
-.time {
-    width: 90px;
-    height: 40px;
-    bottom: -20px;
-    position: relative;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-.about-me  {
-
-    width: 100%;
-    height: 900px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-} 
-
-.about-me h3 {
-    z-index: 1;
-}
-.about-me1 {
-
-    width: 100%;
-    height: 10%;
-    background-color: purple;
-    padding-top: 0px;
-    padding-left: 0px;
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-}
-.about-me2 {
-
-    width: 100%;
-    height: 90%;
-    background-color: purple;
-    display: flex;  
-    flex-direction: column; 
-    padding-top: 20px;
-}
-.about-me3 {
-
-    width: 100%;
-    height: 50%;
-    border-style: solid;
-    border-color: gray;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.about-me3-4, .about-me4-4 {
-    width: 300px;
-    height: 150px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    right: 27px;
-    bottom: 20px;
-}
-.about-me4 {
-
-    width: 100%;
-    height: 50%;
-    background-color: purple;
-}
-.about-me3 h3 {
-    margin: 0px;
-    right: 155px;
-    position: relative;
-    }
-
-.about-me4 h3 {
-    position: relative;
-    right: 135px;
-}
-
-.footer {
-    width: 100%;
-    height: 200px;
-    background-color: gray;
-    display: flex;
-}
-.footer1 {
-    width: 40%;
-    height: 100%;
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    padding-left: 60px;
-    padding-top: 35px;
  
 }
-.footer2 {
-    width: 40%;
-    height: 100%;
-    background-color: gray;
-    display: flex;
-}
-.footer2-1 {
-    width: 50%;
-    height: 100%;
-    background-color: gray;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.footer2-2 {
-    width: 50%;
-    height: 100%;
-    background-color: gray;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.footer p, p2 {
-
-    font-size: 8px;
-}
-.footer3 {
-    width: 20%;
-    height: 100%;
-    background-color: gray;
-    display: flex;
-    justify-content: flex-end;
-    align-items: last baseline;
-    padding-right: 30px;
-    padding-bottom: 30px;
-}
-
-.footer3-1 {
-    width: 50px;
-    height: 50px;
-    background-image: url(Img/Logo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-style: solid;
-    border-color: white;
-}
-
-.new-elektrik {
-    width: 100%;
-    height: 1800px;
-    position: relative;
-    background-color: rgb(13, 13, 13);
-
-}
-
-.new-elektrik0 {
-    width: 100%;
-    height: 100%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color: purple; 
-}
-
-.new-elektrik1 {
-height: 35%;
-width: 100%;
-    background-color: rgb(13, 13, 13);
-    padding-left: 80px;
-    padding-right: 80px;
-}
-.new-elektrik2 {
-height: 25%;
-width: 100%;
-padding-top: 15px;
-padding-left: 55px;
-
-   
-}
-.new-elektrik3 {
-    width: 100%;
-    height: 40%;
-    background-color: none;
-    
-}
-.highlight {
-    width: 100%;
-    height: 50px;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 25px;
-    bottom: 200px;
-    
-}
-.highlight2 {
-
-    width: 100%;
-    height: 150px;
-    background-color: none;
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-    position: relative;
-    bottom: 220px;
-}
-
-.close-button {
-     width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 1300px;
-    left: 0px;
-    cursor: pointer;
-    z-index: 2;
-    border-style: solid;
-    border-color: yellow;
-}
-.bigbox6 {
-    width: 100%;
-    height: 100%;
-    background-color: none;
-    display: flex;
-    flex-direction: column;
-  
-    padding-left: 80px;
-    padding-top: 0px;
-    position: relative;
-    bottom: 70px;
-}
-.bigbox-detail {
-    width: 300px;
-    height: 200px;
-    background-color: black;
-    background-image: url(Img/elektrik\ eel\ process.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    border-style: solid;
-    border-color: white;
-    margin-bottom: 10px;
-}
-.new-avatar {
-    width: 100%;
-    height: 1800px;
-    position: relative;
-    background-color: rgb(13, 13, 13);
-}
-.new-avatar0 {
-    width: 100%;
-    height: 100%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color: purple;
-    border-top: none;
-    
-}
-
-.new-avatar1 {
-width: 100%;
-height: 35%;
-    background-color: rgb(13, 13, 13);
-    flex-direction: column;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-.new-avatar2 {
-width: 100%;
-height: 25%;
-padding-top: 15px;
-padding-left: 55px;
-
-   
-}
-.new-avatar3 {
-    width: 100%;
-    height: 40%;
-    background-color: none;
-    
-}
-
-.avatar .small-button {
-    width: 120px;
-    height: 40px;
-    display: flex;
-    top: 300px;
-    
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    z-index: 3;
-    border-style: solid;
-    border-color: yellow;
-    right: 0px;
-
-
-}
-
-
-
 
 
 

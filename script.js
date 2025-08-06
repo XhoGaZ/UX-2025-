@@ -41,6 +41,31 @@ function closeBigBox(type) {
 
 }
 
+  function toggleBox(button) {
+    const targetId = button.getAttribute('data-target');
+    const targetBox = document.getElementById(targetId);
+    const showMoreBtn = document.querySelector(`[data-target="${targetId}"]`);
+
+    const isHidden = targetBox.classList.contains("hidden");
+
+    if (isHidden) {
+      targetBox.classList.remove("hidden");
+      showMoreBtn.style.display = "none";
+
+    const yOffset = -100;
+    const y = targetBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+
+
+    } else {
+      targetBox.classList.add("hidden");
+      showMoreBtn.style.display = "flex";
+    }
+    
+
+  }
+
 const hamburger = document.querySelector(".hamburger");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
