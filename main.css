@@ -8,6 +8,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 @font-face {
     font-family: zekton;
  
@@ -25,29 +26,40 @@ h1{
     color: purple;
     font-family: zekton;
     text-transform: uppercase;
-    font-size: 48px;
-    letter-spacing: 2px;
+    font-size: 43px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
 }
 
 h2 {
     color: white;
     font-family: zekton;
-    font-size: 35px;
-    letter-spacing: 2px;
-    margin: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin: 10px;
 }
 h3 {
     color: white;
     font-family: zekton;
     font-size: 24px;
-    margin: 10px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+
+    margin-top: 10px;
     z-index: 5;
 
 }
 p {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "exo 2", sans-serif;
+    font-weight: 400;
     font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.015em;
+
     position: relative;
     top: 20px;
 }
@@ -86,8 +98,9 @@ span {
     width: 50%;
     height: 100%;
     display: flex;
+    align-items: center;
     padding-left: 50px;
-    padding-top: 10px;
+   
     
 }
 .header1-box {
@@ -97,8 +110,7 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-style: solid;
-    border-color: black;
+
  
 }
 
@@ -109,26 +121,23 @@ span {
     justify-content: flex-end;
     align-items: center;
     background-color: white;
-    padding-right: 55px;
+    padding-right: 50px;
 }
 
 .hamburger-box {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: white;
     z-index: 45;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-right: -30px;
 }
 
 
 .off-screen-menu {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     height: 100%;
     width: 100%;
     max-width: 350px;
@@ -159,7 +168,7 @@ span {
 .icons1 {
     width: 80%;
     height: 40px;
-    background-color: purple;
+    background-color: rgb(0, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,11 +177,13 @@ span {
     right: 8px;
     
 }
+.icons1 h3 {
+    color: rgb(18, 19, 20);
+}
 .icons2 {
 
     width: 100%;
     height: 50px;
-    background-color: purple;
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
@@ -181,7 +192,7 @@ span {
 .icons2-1 {
     width: 30%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20,30);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +200,7 @@ span {
 .icons2-2 {
     width: 70%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     justify-content: first baseline;
     align-items: center;
@@ -204,7 +215,7 @@ span {
     width: 50px;
     height: 50px;
     border-style: solid;
-    border-color: lightgray;
+    border-color:rgb(0,255, 255);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -279,7 +290,13 @@ span {
 .feature {
     width: 100%;
     height: 700px;
-    background-color: black;
+
+    background:
+    linear-gradient(rgba(18, 20, 30, 0.5), rgba(18, 20, 30, 0.5)),
+    url(Img/Cyberpunk.jpg);
+    background-position: 70% 40%;
+    background-blend-mode: multiply;
+    
     position: relative;
     z-index: 3;
    
@@ -288,92 +305,108 @@ span {
 
 
 .elektrik2 img {
-    width: 1500px;
-    height: 1800px;
+    width: 2800px;
+    height: 3300px;
     position: absolute;
-    left: -150px;
-    z-index: 2;
-    bottom: 100px;
+    z-index: 1;
+    bottom: -1050px;
+    left: -900px;
+    transform: rotate(90deg);
+    pointer-events: none;
 
 }
 .feature1 {
-    width: 75%;
+    width: 40%;
     height: 100%;
-    background-color: black;
     display: flex;
-    flex-direction: column; 
     z-index: 2;
+     padding-left: 120px;
+    padding-top: 200px;
+    padding-right: 50px;
+    flex-direction: column;
 
 
 }
 .feature2 {
-    width: 25%;
+    width: 60%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
     display: flex;
-    padding-left: 120px;
-    padding-top: 80px;
     z-index: 1;
 
 }
-.feature3{
-    width: 100%;
-    height: 60%;
-    background-color: rgb(13, 13, 13);
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-top: 120px;
-    z-index: 1;
 
 
-}
-.feature4 {
-    width: 100%;
-    height: 40%;
-    background-color: rgb(13, 13, 13);
-    display: flex;  
+.feature p {
     padding-top: 30px;
-    z-index: 1;
-
-    
 }
-.feature5 {
-    width: 300px;
+
+.feature-box {
+    width: 200px;
     height: 200px;
-    position: relative;
-    border-color: purple;
+    background-color: none;
     border-style: solid;
-
-    
-    left: 100px;
-    bottom: 30px;
+    border-color: rgb(0, 255, 255);
+    border-width: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    border-radius: 5px;
-    z-index: 1;
+    justify-content: center;
+    position: relative;
+    top: 520px;
+    left: 0px;
 }
+.feature-box1 {
+    width: 200px;
+    height: 200px;
+    background-color: none;
+
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 400px;
+    left: 50px;
+}
+.feature-box2 {
+    width: 200px;
+    height: 200px;
+    background-color: none;
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 300px;
+    left: 20px;
+}
+
+
 .services {
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
-    background-color: rgb(13, 13, 13);
+    background: rgb(0, 255, 255);
+    background: linear-gradient(180deg, rgba(0, 255, 255, 1) 10%, rgba(18, 19, 20, 1) 100% );
     position: relative;
 }
 .services1 {
     width: 20%;
     height: 100%;
-    background-color: purple;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    padding-bottom: 0px;
+    padding-left: 100px;
+   
 }
-.services h3 {
-    color: white;
+.services h2 {
+    color: rgb(18, 20, 30);
     margin: 0px;
 }
 .services p {
@@ -381,11 +414,11 @@ span {
 }
 .services2 h3 {
     padding-top: 10px;
+    color: white;
 }
 .services2 {
     width: 80%;
     height: 100%;
-    background-color: purple;
     position: relative;
     display: flex;
     justify-content: center;
@@ -394,10 +427,10 @@ span {
 }
 .service-box {
     width: 350px;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    background-color: purple;
+    background-color: rgb(18, 20, 30);
         margin: 5px;
   
     border-radius: 5px;
@@ -406,15 +439,22 @@ span {
     
 }
 
+
+
 .service-box2 {
     width: 100%;
     height: 30%;
-    background-color: lightgray;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
     border-radius: 5px 5px 0 0;
+    border-color: rgb(0, 255, 255);
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+;
 
 
 }
@@ -426,14 +466,17 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    border-style: solid;
+    border-color: white;
   
 
 }
 .service-box4 {
     width: 100%;
     height: 70%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     padding-left: 20px;
+    padding-right: 30px;
     border-radius: 0 0 5px 5px;
 }
 
@@ -441,31 +484,45 @@ span {
   
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
-    height: 120px;
+    height: 150px;
     width: 100%;
-    padding-top: 50px;
-    background-color: rgb(13, 13, 13);
+    padding-top: 100px;
+    padding-left: 100px;
+    background-color: rgb(18, 20, 30);
 }
 
 .title-box2 {
   
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 120px;
+    justify-content: center;
+    height: 250px;
     width: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
 }
 
 
 
 .line {
-    width: 90px;
-    height: 5px;
-    background-color: lightgray;
+    width: 10px;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
     z-index: 2;
+}
+.line2 {
+    width: 320px;
+    height: 2px;
+    background-color: rgb(0, 255, 255);
+    z-index: 1;
+
+}
+.line3 {
+    width: 10px;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
+    position: relative;
+    right: 260px;
 }
 
 
@@ -475,24 +532,22 @@ span {
     font-weight: bold;
    
 }
-.title, .title1 h3 { 
-    color: white;
+.title, .title1 h2 { 
+    color: rgb(0, 255, 255);
     font-weight: bold;
     font-size: 34px;
     z-index: 3;
 
 }
 
-.title1 h3 {
-    color: black;
-}
+
 
 
 .elektrik {
 
     width: 100%;
-    height: 550px;
-    background-color: rgb(13, 13, 13);
+    height: 800px;
+    background-color: rgb(18, 20, 30);
     display: flex;
     position: relative;
     z-index: 3;
@@ -507,10 +562,11 @@ span {
     width: 40%;
     height: 100%;
     bottom: 40px;
-    background-color: rgb(13, 13, 13);
-    padding-left: 100px;
-    padding-top: 60px;
+    background-color: rgb(18, 20, 30);
+    padding-left: 120px;
+    padding-top: 100px;
     position: relative;
+    z-index: 3;
 
     
 }
@@ -519,48 +575,68 @@ span {
 
     width: 60%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: visible;
+    padding-top: 50px;
     z-index: 3;
 
 }
 
 .image-holder {
     width: 600px;
-    height: 350px;
-    background-image: url(Img/Elektrik\ Eel.png);
+    height: 650px;
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
-    bottom: 40px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    left: 200px;
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    bottom: 150px;
+   
     z-index: 3;
-    
 }
+
+.image-holder::before {
+    content: "";
+    position: absolute;
+    top: -20%; left: -30%; right: 0; bottom: -50%;
+    background: url(Img/Elektrik.png)
+    top/cover no-repeat;
+    transform: rotate(-45deg);
+}
+
+
 
 .elektrik h3 {
     margin: 0;
 }
 
 .elektrik p {
-    color: lightgrey;
+        color: white;
+        position: relative;
+        top: 50px;
+
 }
 .small-button {
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 50px;
+    top: 100px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 5;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(180, 190, 200);
 
 }
 .small-button:hover {
@@ -599,7 +675,7 @@ span {
 .bigbox6 {
     width: 100%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: none;
     display: flex;
     flex-direction: column;
     padding-left: 60px;
@@ -634,7 +710,7 @@ span {
 
     width: 350px;
     height: 50px;
-    background-color: purple;
+    background-color: rgb(0, 255, 255);
     margin-bottom: 120px;
     display: flex;
     align-items: center;
@@ -655,25 +731,27 @@ span {
 
 .new-elektrik {
     width: 100%;
-    height: 900px;
+    height: 1100px;
     position: relative;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
 
 }
 
 .new-elektrik0 {
     width: 100%;
     height: 85%;
+        background-color: rgb(18, 20, 30);
+
     padding-top: 50px;
     display: flex;
     border-style: solid;
-    border-color: purple;
+    border-color: rgb(0, 255, 255);
     
 }
 
 .new-elektrik1 {
 width: 35%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     flex-direction: column;
     padding-left: 100px;
     padding-right: 40px;
@@ -686,7 +764,7 @@ padding-top: 15px;
 }
 .new-elektrik3 {
     width: 40%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     
 }
 .highlight {
@@ -705,6 +783,7 @@ padding-top: 15px;
     width: 200px;
     height: 50px;
     
+    
  
 }
 
@@ -712,20 +791,19 @@ padding-top: 15px;
 
     width: 150px;
     height: 50px;
-    background-color: none;
+    background-color: rgb(0, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     border-radius: 5px;
 
-
 }
 
 .highlight2 {
 
     width: 80%;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -735,14 +813,15 @@ padding-top: 15px;
 .new-elektrik h3 {
     margin: 0px;
 }
+
 .new-avatar h3 {
     margin: 0px;
 }
-.new-elektrik p {
-    color: lightgray;
+.new-elektrik1 p {
+    color: white;
 }
 .new-avatar p {
-    color: lightgray;
+    color: white;
 }
 
 .hidden {
@@ -750,92 +829,122 @@ padding-top: 15px;
 }
 
 .close-button {
-     width: 150px;
-    height: 50px;
+     width: 200px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 50px;
+    top: 100px;
     cursor: pointer;
     z-index: 1;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(180, 190, 200);
 }
-
-
-
-    
 
 .avatar {
     width: 100%;
-    height: 550px;
-    background-color: blue;
+    height: 700px;
+    background-color: rgb(18, 20, 30);
     display: flex;
-    border: purple;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    position: relative;
+    border-bottom: 1px solid transparent;
   
-    
+    padding-top: 80px;
+   
+}
+.avatar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
+    transform: translate(-50%);
 }
 .avatar1 {
     width: 50%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 155px;
 }
 .avatar2 {
     width: 50%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
-    padding-top: 55px;
+    background-color: rgb(18, 20, 30);
+    padding-left: 80px;
+    padding-top: 70px;
 
 }
 .avatar h3 {
     margin: 0;
+    position: relative;
+    bottom: 20px;
 }
 .avatar p {
-    color: lightgray;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+.avatar, .small-button h3 {
+    bottom: 0px;
+
 }
 .image-holder2 {
     width: 600px;
-    height: 350px;
-    background-color: pink;
-    z-index: 2;
-    background-image: url(Img/1.png);
+    height: 650px;
+    background-color: none;
+    z-index: 5;
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
-    bottom: 25px;
+    overflow: hidden;
+    top: 55px;
+    right: 100px;
+    transform: rotate(45deg);
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+}
+.image-holder2::before {
+    content: "";
+    position: absolute;
+    top: -50%; left: -0%; right: -100%; bottom: -100%;
+    background: url(Img/1.png)
+    top/cover no-repeat;
+    transform: rotate(-45deg);
 }
 
 .new-avatar {
     width: 100%;
-    height: 900px;
+    height: 1100px;
     position: relative;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
+    z-index: 3;
+    border-color: rgb(0, 255, 255);
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .new-avatar0 {
     width: 100%;
     height: 85%;
-    padding-top: 50px;
+    padding-top: 150px;
     display: flex;
-    border-style: solid;
-    border-color: purple;
-    border-top: none;
+   
     
 }
 
 .new-avatar1 {
 width: 35%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     flex-direction: column;
     padding-left: 100px;
     padding-right: 40px;
@@ -848,7 +957,7 @@ padding-top: 15px;
 }
 .new-avatar3 {
     width: 40%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20,30);
     
 }
 
@@ -856,12 +965,26 @@ padding-top: 15px;
 .slideshow-container{
     width: 100%;
     height: 750px;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
+    position: relative;
+    
+
+    background-position: right;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-     
+    padding-left: 200px;
+    
+}
+
+
+.slideshow-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgb(18, 20, 30, 0.7);
+
+  pointer-events: none; 
 }
 
 .slide-content {
@@ -871,8 +994,8 @@ padding-top: 15px;
     align-items: center;
     justify-content: center;
     background-color: none;
-    padding-bottom: 50px;
         position: absolute;
+        z-index: 3;
 
 }
 .slide-image { 
@@ -887,10 +1010,11 @@ padding-top: 15px;
 }
 .slide-text {
 
-    width: 40%;
-    height: 35%;
-    background-color: rgb(13, 13, 13);
-    border-color: purple;
+    width: 45%;
+    height: 45%;
+    background-color: rgb(18, 20, 30);
+    border-color: rgb(0, 255, 255);
+
     border-style: solid;
 
     display: flex;
@@ -898,8 +1022,11 @@ padding-top: 15px;
     font-family: zekton;
     font-size: 20px;
     position: relative;
-    right: 100px;
-    padding-left: 15px;
+    right: 80px;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-top: 20px;
+    bottom: 50px;
    
 
     flex-direction: column;
@@ -908,16 +1035,14 @@ padding-top: 15px;
   
 }
 
-.description p {
-    top: 0;
-}
+
 .nav-container {
     margin-top: 15px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-bottom: 420px;
-    left: 320px;
+    padding-bottom: 415px;
+    left: 390px;
 }
 .nav-box {
     height: 60px;
@@ -929,7 +1054,11 @@ padding-top: 15px;
     align-items: center;
     cursor: pointer;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(180, 190, 200);
+
+}
+.nav-box h3 {
+    margin: 0px;
 }
 .active { 
     display: flex;
@@ -941,20 +1070,24 @@ padding-top: 15px;
     opacity: 0.5;
 }
 
-
-
 .time {
-    width: 120px;
+    width: 150px;
     height: 50px;
-    left: 0px;
+    left: 20px;
     position: absolute;
-    bottom: 220px;
-    background-color: gray;
+    bottom: 240px;
+        background-color: rgb(0, 255, 255);
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
     border-radius: 5px;
+}
+.time h3 {
+    color: rgb(18, 20, 30);
+        margin-top: 0px;
+
+
 }
 
 .slideshow-container p {
@@ -971,97 +1104,109 @@ padding-top: 15px;
     bottom: 500px;
     z-index: 1;
 }
+.about-me img {
+    width: 2200px;
+    height: 1000px;
+    position: absolute;
+    right: 300px;
+    transform: rotate(220deg);
+    top: 3400px;
+    z-index: 2;
+    pointer-events: none;
+   
+}
 
 .about-me  {
 
     width: 100%;
-    height: 600px;
-    background-color: black;
+    height: 850px;
+    background-color: rgb(18, 20, 30);
     display: flex;
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-width: 5px;
+    
+   
 } 
-.about-me1 {
 
-    width: 15%;
-    height: 100%;
-    background-color: purple;
-    padding-top: 50px;
-    padding-left: 100px;
-}
-.about-me1 h3 {
+
+
+.about-me h3 {
     margin: 0px;
-    }
+    color: rgb(0, 255, 255);
+    position: relative;
+    right: 240px;
+    padding-bottom: 30px;
+
+}
+.about-me p {
+    padding-right: 0px;
+    color: white;
+    right: 240px;
+    padding-right: 140px;
+}
+
+.about-me1 {
+    width: 60%;
+    height: 100%;
+    background-image: url(Img/Me.webp);
+    background-repeat: no-repeat;
+    background-position: 10px 40px;
+    background-size: cover;
+        display: flex;
+    align-items: center;
+    padding-left: 120px;
+    z-index: 2;
+
+}
+
+
 
 .about-me2 {
 
-    width: 85%;
+    width: 40%;
     height: 100%;
-    background-color: purple;
+        padding-top: 100px;
+
+    position: relative;
     display: flex;
+        flex-direction: column;
+
     justify-content: center;
     align-items: center;
+    z-index: 1;
   
 }
-.about-me3 {
 
-    width: 45%;
-    height: 80%;
-    border-style: solid;
-    border-color: gray;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
-}
-
-.about-me4 {
-
-    width: 45%;
-    height: 80%;
-}
-
-.about-me3-1 {
+.about-me2-1 {
 
     width: 100%;
     height: 20%;
-    background-color: none;
-    display: flex;
-    align-items:last baseline;
-    justify-content: center;
-    padding-bottom: 20px;
-
-}
-.about-me3-2 {
-    width: 100%;
-    height: 30%;
-    background-color: none
-    ;
-    display: flex;
-    padding-left: 65px;
-    padding-right: 50px;
-}
-.about-me3-3 {
-    width: 100%;
-    height: 50%;
-    background-color: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    z-index: 1;
+    
 }
-.about-me3-4 {
-    width: 80%;
+.about-me2-2 {
+
+    width: 100%;
     height: 80%;
-    background-image: url(Img/Adventure.jpg);
-    background-position: center;
-    background-size: cover;
+    display: flex;
+        flex-direction: column;
+
+    flex-direction: column;
+    z-index: 1;
+    
 }
-.about-me4-4 {
-    width: 80%;
-    height: 80%;
-    background-image: url(Img/Unnormal.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.about-me p {
-    color: lightgray;
+.about-me h2 {
+    color: white;
+    position: relative;
+    right: 260px;
+    
 }
 .footer {
     width: 100%;
@@ -1124,9 +1269,7 @@ p2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-.about-me p {
-    top: 0px;
-}
+
 .bigbox-highlight p {
     top: 0px;
 }
@@ -1138,16 +1281,20 @@ p2 {
 @media (max-width: 868px) {
 
     h1 {
-        font-size: 20px;
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 27px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 20px;
         margin: 5px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         position: relative;
         top: 20px;
     }
@@ -1164,46 +1311,137 @@ p2 {
 
     .header1 {
 
-        position: relative;
-        right: 10px;
+        padding-left: 20px;
+        padding-top: 3px;
 
     }
 
     .header1-box {
         width: 40px;
-        height: 35px;
+        height: 40px;
         background-image: url(Img/Logo.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        border-style: solid;
-        border-color: black;
+       
      
+    }
+    .header2 {
+
+        padding-right: 30px;
+       
+    }
+    
+    .hamburger-box {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        z-index: 45;
+        position: fixed;
+        display: flex;
+        align-items: center;
     }
 
     .hamburger {
 
         width: 40px;
         height: 40px;
-
     }
-    .hamburger-box {
-        width: 30px;
-        height: 40px;
-      
-    }
-
     .feature {
-        height: 450px;
-            background-color: rgb(13, 13, 13);
+    width: 100%;
+    height: 600px;
 
-    }
+    background:
+    linear-gradient(rgba(18, 20, 30, 0.5), rgba(18, 20, 30, 0.5)),
+    url(Img/Cyberpunk.jpg);
+    background-position: 60% 30%;
+    background-blend-mode: multiply;
+    
+    position: relative;
+    z-index: 3;
+   
+    display: flex;
+    flex-direction: column;
+}
+.feature1 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    z-index: 2;
+     padding-left: 40px;
+    padding-top: 120px;
+    padding-right: 120px;
+    flex-direction: column;
+
+
+}
+.feature2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    z-index: 1;
+    padding-top: 30px;
+
+}
+.feature p {
+    padding-top: 0px;
+}
+.feature h2 {
+
+    font-size: 20px;
+
+}
+
+.feature-box {
+    width: 120px;
+    height: 120px;
+    background-color: none;
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 220px;
+    left: 40px;
+}
+
+.feature-box1 {
+    width: 120px;
+    height: 120px;
+    background-color: none;
+
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+    left: 0px;
+}
+.feature-box2 {
+    width: 120px;
+    height: 120px;
+    background-color: none;
+    border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
 
     .off-screen-menu {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     height: 100%;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     position: fixed;
     top: 0;
     right: -450px;
@@ -1271,120 +1509,39 @@ p2 {
     }
    
 
-    .feature2 {
-        width: 35%;
-        height: 100%;
-        background-color: rgb(13, 13, 13);
-        display: flex;
-        position: relative;
-        padding-right: 100px;
-        padding-top: 95px;
-        z-index: 1;
-    
-    }
-
-    .feature3{
-        width: 100%;
-        height: 70%;
-        background-color: rgb(13, 13, 13);
-        display: flex;
-        flex-direction: column;
-        padding-left: 65px;
-        padding-top: 100px;
-        z-index: 1;
-    
-    
-    }
-
-    .feature4 {
-      width: 100%;
-    height: 40%;
-    background-color: rgb(13, 13, 13);
-    display: flex;  
-    position: relative;
-    right: 0px;
-    
-    padding-top: 20px;
-    z-index: 1;
-
-        
-    }
-
-    .feature5 {
-        width: 150px;
-        height: 100px;
-        left: 65px;
-   
-    position: relative;
-    bottom: 30px;
-    
-  
-
+  .services {
+    width: 100%;
+    height: 1150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    border-radius: 5px;
-    z-index: 1;
-    }
-
-    .header2 {
-        width: 50%;
-        height: 10px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        background-color: white;
-        padding-right: 55px;
-        padding-top: 20px;
-    }
-
-    .hamburger-box {
-        width: 60px;
-        height: 50px;
-        background-color: white;
-        z-index: 45;
-        position: fixed;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: 10px;
-        margin-right: -30px;
-    }
-
-    .services {
-        width: 100%;
-        height: 900px;
-        display: flex;
-        flex-direction: column;
-        background-color: purple;
-        position: relative;
-    }
+    background: rgb(0, 255, 255);
+    background: linear-gradient(180deg, rgba(0, 255, 255, 1) 10%, rgba(18, 19, 20, 1) 100% );
+    position: relative;
+}
 
     .services1 {
         width: 100%;
-        height: 5%;
-        background-color: purple;
+        height: 10%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
          padding-left: 0px;
+         padding-top: 0px;
         
         position: relative;    
     
     }
 
-    .services1 h3 {
+    .services h3 {
 
-        margin: 3px;
+        margin: 0px;
         z-index: 4;
         
     }
 
     .services2 {
         width: 100%;
-        height: 95%;
-        background-color: purple;
+        height: 90%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1395,11 +1552,10 @@ p2 {
     }
 
     .service-box {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    background-color: purple;
         margin: 5px;
   
     border-radius: 5px;
@@ -1410,8 +1566,7 @@ p2 {
 
     .service-box2 {
     width: 100%;
-    height: 35%;
-    background-color: lightgray;
+    height: 25%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1420,8 +1575,8 @@ p2 {
 }
 
 .service-box3 {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 50px;
     background-color: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -1430,92 +1585,95 @@ p2 {
 }
 .service-box4 {
     width: 100%;
-    height: 65%;
-    background-color: rgb(13, 13, 13);
+    height: 75%;
+    background-color: rgb(18, 20, 30);
     padding-left: 20px;
+    padding-top: 10px;
     border-radius: 0 0 5px 5px;
 }
 
 .title-box {
   
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 0px;
+    padding-left: 0px;
     position: relative;
-    padding-top: 50px;
     
-   
-    
-    
-    height: 150px;
+    height: 115px;
     width: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
 }
-.title-box h3 {
-    font-size: 16px;
-    font-weight: bold;
+
+.title-box h2 {
     margin: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 .line {
-    width: 60px;
-    height: 5px;
-    background-color: lightgray;
+    width: 10px;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
     z-index: 4;
 }
 
 .elektrik {
 
     width: 100%;
-    height: 700px;
+    height: 1100px;
     background-color: rgb(13, 13, 13);
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 3;
     transition: opacity 0.3s ease-in-out;
-    padding-right: 40px;
 
 }
 
 .elektrik1 {
 
     width: 100%;
-    height: 70%;
+    height: 40%;
     background-color: rgb(13, 13, 13);
     position: relative;
+    padding-left: 40px;
+    padding-top: 40px;
+    z-index: 3;
 
 }
 
-.elektrik1 .more h3 {
-    left: 0px;
+.elektrik p {
+        color: white;
+        position: relative;
+        top: 50px;
+        padding-right: 30px;
+
 }
-
-
 .elektrik2 {
 
     width: 100%;
-    height: 30%;
-    background-color: rgb(13, 13, 13);
-    padding-right: 35px;
+    height: 60%;
+    padding-right: 0px;
     display: flex;
     position: relative;
     z-index: 3;
-    bottom: 120px;
+    bottom: 0px;
 
 }
 
 .image-holder {
-    width: 250px;
-    height: 200px;
+    width: 450px;
+    height: 400px;
     background-image: url(Img/Elektrik\ Eel.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
+        margin-top: 100px;
+        left: 120px;
+
+
     z-index: 3;
-    margin-top: 70px;
     
 }
 .small-button {
@@ -1536,17 +1694,8 @@ p2 {
 
 }
 
-.elektrik h3 {
-    margin: 0;
-    position: relative;
-    right: 20px;
-    
-}
 
-.elektrik p {
-    color: lightgrey;
-    right: 20px;
-}
+
 
 .small-button h3 {
     left: 0px;
