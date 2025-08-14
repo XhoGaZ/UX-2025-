@@ -1470,17 +1470,17 @@ padding-top: 15px;
 
     width: 100%;
     height: 50px;
-    background-color: purple;
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
+    padding-left: 2px;
 
 }
 
 .icons2-1 {
     width: 30%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1489,7 +1489,7 @@ padding-top: 15px;
 .icons2-2 {
     width: 70%;
     height: 100%;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     justify-content: first baseline;
     align-items: center;
@@ -1710,15 +1710,23 @@ padding-top: 15px;
     background-color: rgb(18, 20, 30);
     display: flex;
     flex-direction: column;
-    border: gray;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
+    position: relative;
+    border-bottom: 1px solid transparent;
         padding-top: 0px;
 
     z-index: 2;
-  
-    
+   
+}
+.avatar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
+    transform: translate(-50%);
+    z-index: 2 ;
 }
 
 .avatar1 {
@@ -1789,7 +1797,7 @@ padding-top: 15px;
 .slideshow-container{
     width: 100%;
     height: 850px;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
     display: flex;
     justify-content: center;
     align-items: center;
