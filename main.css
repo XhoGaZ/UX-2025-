@@ -540,9 +540,6 @@ span {
 
 }
 
-
-
-
 .elektrik {
 
     width: 100%;
@@ -612,8 +609,6 @@ span {
     top/cover no-repeat;
     transform: rotate(-45deg);
 }
-
-
 
 .elektrik h3 {
     margin: 0;
@@ -704,8 +699,6 @@ span {
     align-items: center;
 }
 
-
-
 .bigbox-highlight {
 
     width: 350px;
@@ -746,7 +739,6 @@ span {
     display: flex;
     border-style: solid;
     border-color: rgb(0, 255, 255);
-    
 }
 
 .new-elektrik1 {
@@ -759,6 +751,7 @@ width: 35%;
 .new-elektrik2 {
 width: 25%;
 padding-top: 15px;
+padding-right: 30px;
 
    
 }
@@ -782,9 +775,6 @@ padding-top: 15px;
 .bigbox-header1 {
     width: 200px;
     height: 50px;
-    
-    
- 
 }
 
 .highlight1 {
@@ -878,6 +868,7 @@ padding-top: 15px;
     height: 100%;
     background-color: rgb(18, 20, 30);
     padding-left: 80px;
+    padding-right: 190px;
     padding-top: 70px;
 
 }
@@ -929,9 +920,7 @@ padding-top: 15px;
     z-index: 3;
     border-color: rgb(0, 255, 255);
     border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-color: rgb(0, 255, 255);
 }
 .new-avatar0 {
     width: 100%;
@@ -1025,7 +1014,7 @@ padding-top: 15px;
     right: 80px;
     padding-left: 25px;
     padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 40px;
     bottom: 50px;
    
 
@@ -1112,8 +1101,7 @@ padding-top: 15px;
     transform: rotate(220deg);
     top: 3400px;
     z-index: 2;
-    pointer-events: none;
-   
+    pointer-events: none; 
 }
 
 .about-me  {
@@ -1132,8 +1120,6 @@ padding-top: 15px;
    
 } 
 
-
-
 .about-me h3 {
     margin: 0px;
     color: rgb(0, 255, 255);
@@ -1149,6 +1135,7 @@ padding-top: 15px;
     padding-right: 140px;
 }
 
+
 .about-me1 {
     width: 60%;
     height: 100%;
@@ -1162,8 +1149,6 @@ padding-top: 15px;
     z-index: 2;
 
 }
-
-
 
 .about-me2 {
 
@@ -1180,7 +1165,6 @@ padding-top: 15px;
     z-index: 1;
   
 }
-
 .about-me2-1 {
 
     width: 100%;
@@ -1189,24 +1173,31 @@ padding-top: 15px;
     align-items: center;
 
     z-index: 1;
-    
 }
 .about-me2-2 {
 
     width: 100%;
-    height: 80%;
+    height: 40%;
     display: flex;
         flex-direction: column;
 
     flex-direction: column;
     z-index: 1;
-    
+}
+.about-me2-3 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
 }
 .about-me h2 {
     color: white;
     position: relative;
     right: 260px;
-    
+ 
 }
 .footer {
     width: 100%;
@@ -1220,7 +1211,7 @@ padding-top: 15px;
     background-color: gray;
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 120px;
 }
 .footer2 {
     width: 40%;
@@ -1233,8 +1224,7 @@ padding-top: 15px;
     height: 100%;
     background-color: gray;
     padding-left: 30px;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
 .footer2-2 {
     width: 50%;
@@ -1260,14 +1250,22 @@ padding-top: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-style: solid;
-    border-color: white;
+ 
 }
-p2 {
 
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+.footer h2 {
+    font-size: 30px;
+}
+.footer h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.footer p {
+    font-size: 16px;
+}
+
+.footer-special {
+    visibility: hidden;
 }
 
 .bigbox-highlight p {
@@ -1276,6 +1274,7 @@ p2 {
 .highlight1 p {
     top: 0px;
 }
+
 
 
 @media (max-width: 868px) {
@@ -1306,7 +1305,7 @@ p2 {
         background-color: white;
         display: flex;
         position: fixed;
-        z-index: 5;
+        z-index: 50;
     }
 
     .header1 {
@@ -1498,13 +1497,14 @@ p2 {
 }
 
     .elektrik2 img {
-        width: 1500px;
-        height: 2000px;
-        transform: translate(-5%) scale(0.75);
+        width: 1600px;
+        height: 900px;
+        transform: scale(1);
 
         position: absolute;
-        z-index: 2;
-        bottom: 280px;
+        z-index: 3;
+        top: -240px;
+    left: -450px;
     
     }
    
@@ -1620,7 +1620,7 @@ p2 {
 .elektrik {
 
     width: 100%;
-    height: 1100px;
+    height: 1150px;
     background-color: rgb(13, 13, 13);
     display: flex;
     flex-direction: column;
@@ -1633,8 +1633,8 @@ p2 {
 .elektrik1 {
 
     width: 100%;
-    height: 40%;
-    background-color: rgb(13, 13, 13);
+    height: 50%;
+    background-color: rgb(18, 20, 30);
     position: relative;
     padding-left: 40px;
     padding-top: 40px;
@@ -1649,19 +1649,31 @@ p2 {
         padding-right: 30px;
 
 }
+.avatar p {
+        color: white;
+        position: relative;
+        top: 30px;
+        padding-right: 0px;
+        z-index: 10;
+}
 .elektrik2 {
 
     width: 100%;
-    height: 60%;
+    height: 50%;
+    min-height: 400px;
+    background-color: rgb(18, 20, 30);
     padding-right: 0px;
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
     z-index: 3;
     bottom: 0px;
 
 }
 
-.image-holder {
+.image-holder{
     width: 450px;
     height: 400px;
     background-image: url(Img/Elektrik\ Eel.png);
@@ -1669,107 +1681,124 @@ p2 {
     background-size: cover;
     background-position: top;
     position: relative;
-        margin-top: 100px;
+        margin-top: 150px;
         left: 120px;
 
 
     z-index: 3;
     
 }
-.small-button {
-    width: 120px;
-    height: 40px;
-    display: flex;
-    top: 300px;
-    
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    z-index: 3;
-    border-style: solid;
-    border-color: yellow;
-    right: 20px;
 
+.small-button {
+
+    width: 150px;
+    height: 50px;
+    top: 400px;
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(18, 20,30);
 
 }
-
-
-
-
+ 
 .small-button h3 {
     left: 0px;
 }
 
 .avatar {
     width: 100%;
-    height: 700px;
-    background-color: rgb(13, 13, 13);
+    height: 1050px;
+    background-color: rgb(18, 20, 30);
     display: flex;
     flex-direction: column;
     border: gray;
     border-style: solid;
     border-left: none;
     border-right: none;
+        padding-top: 0px;
+
+    z-index: 2;
   
     
 }
+
 .avatar1 {
     width: 100%;
-    height: 50%;
-    background-color: rgb(13, 13, 13);
+    height: 60%;
+    background-color: none;
     display: flex;
     position: relative;
+     padding-left: 0px;
+    padding-top: 0px;
+    bottom: 0px;
+    top: 0px;
+    order: 3;
+    
+    overflow: visible;
 
-    padding-right: 115px;
-    padding-top: 120px;
+    
 }
 .avatar2 {
     width: 100%;
-    height: 50%;
-    background-color: rgb(13, 13, 13);
+    height: 40%;
+    background-color: none;
     position: relative;
-    padding-left: 80px;
-    bottom: 270px;
+    bottom: 0px;
+    z-index: 3;
+    padding-left: 40px;
+    padding-right: 35px;
+    order: 1;
 
 }
 .image-holder2 {
-     width: 250px;
-    height: 200px;
+     width: 360px;
+     height: 400px;
     background-color: pink;
-    z-index: 2;
+    z-index: 5;
     background-image: url(Img/1.png);
     background-repeat: no-repeat;
+    transform: rotate(45deg);
     background-size: cover;
     background-position: top;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    
+      margin-top: 30px;
+        right: 120px;
+
 }
 
 .avatar .small-button  {
-    width: 120px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     display: flex;
-    top: 260px;
+    top: 330px;
     
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    z-index: 3;
+    z-index: 4;
     border-style: solid;
-    border-color: yellow;
-    right: 0px;
+    right: 170px;
 }
+
+.title-box2 {
+    width: 100%;
+    height: 115px;
+}
+
+
+
+
+
 .slideshow-container{
     width: 100%;
-    height: 800px;
+    height: 850px;
     background-color: rgb(13, 13, 13);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-     
+    padding-top: 0px;
+    position: relative;
 }
 
 
@@ -1781,6 +1810,8 @@ p2 {
     flex-direction: column;
     background-color: none;
     padding-bottom: 0px;
+    right: 0px;
+    z-index: 6;
 
 }
 .slide-image { 
@@ -1795,19 +1826,18 @@ p2 {
 }
 .slide-text {
 
-    width: 70%;
-    height: 45%;
-    background-color: none;
+    width: 300px;
+    height: 300px;
     display: flex;
-    color: white;
-    font-family: zekton;
+    background-color: red;
+    font-family: zekton;    
     font-size: 20px;
     position: relative;
     padding-left: 15px;
     left: 0px;
-    top: 20px;
-   
-
+    top: 50px;
+    z-index: 30;
+    
     flex-direction: column;
     
     border-radius: 5px;
@@ -1817,7 +1847,8 @@ p2 {
     display: flex;
     left: 150px;
     margin-bottom: 280px;
-    left: 165px;   
+    left: 105px;   
+    z-index: 30;
    
     flex-direction: row;
 
@@ -1832,31 +1863,53 @@ p2 {
     align-items: center;
     cursor: pointer;
     border-style: solid;
-    border-color: yellow;
-    z-index: 1;
+    border-color: rgb(180, 190, 200);
+    z-index: 30;
 }
 
 .time {
-    width: 90px;
+    width: 120px;
     height: 40px;
-    bottom: -20px;
-    position: relative;
-    background-color: gray;
+    bottom: 180px;
+    left: 15px;
+    position: absolute;
+    background-color: rgb(0, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     border-radius: 5px;
     margin-bottom: 5px;
+    z-index: 30;
 }
+.time-lower { 
+    bottom: 220px;
+} 
+
 .about-me  {
 
     width: 100%;
-    height: 900px;
-    background-color: black;
+    height: 800px;
+    background-color: rgb(18, 20, 30);
     display: flex;
+    position: relative;
     flex-direction: column;
+    z-index: 2;
 } 
+.about-me img {
+    width: 900px;
+    transform: rotate(90deg);
+    height: 900px;
+    position: absolute;
+    top: -550px;
+    left: -400px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 21;
+ 
+}
+
+
 
 .about-me h3 {
     z-index: 1;
@@ -1864,129 +1917,165 @@ p2 {
 .about-me1 {
 
     width: 100%;
-    height: 10%;
-    background-color: purple;
+    height: 40%;
     padding-top: 0px;
     padding-left: 0px;
     display: flex;
+        background-position: 140px 80%;
+
     
     align-items: center;
     justify-content: center;
+    order: 2;
 }
 .about-me2 {
 
     width: 100%;
-    height: 90%;
-    background-color: purple;
+    height: 60%;
     display: flex;  
     flex-direction: column; 
-    padding-top: 20px;
+    padding-top: 0px;
+    order: 1;
 }
-.about-me3 {
+.about-me2-1 {
 
     width: 100%;
-    height: 50%;
-    border-style: solid;
-    border-color: gray;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    z-index: 2;
 }
-.about-me3-4, .about-me4-4 {
-    width: 300px;
-    height: 150px;
-    background-position: center;
-    background-size: cover;
+
+.about-me2-2 {
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    
+    z-index: 1;
+}
+
+.about-me2-3 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+    z-index: 1;
     position: relative;
-    right: 27px;
-    bottom: 20px;
+    bottom: 0px;
 }
-.about-me4 {
 
-    width: 100%;
-    height: 50%;
-    background-color: purple;
+.about-me h2 {
+    color: white;
+    position: relative;
+    left: 0px;
+    
 }
-.about-me3 h3 {
+.about-me h3 {
     margin: 0px;
-    right: 155px;
+    color: rgb(0, 255, 255);
     position: relative;
-    }
+    left: 40px;
+    padding-bottom: 0px;
 
-.about-me4 h3 {
+}
+.about-me p {
+    padding-right: 0px;
+    color: white;
+    left: 40px;
+    padding-right: 85px;
+}
+.about-me2-3 p {
+    padding-right: 170px;
+}
+.line3 {
+    width: 10px;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
     position: relative;
-    right: 135px;
+    left: 0px;
+}
+
+.footer h2 {
+    font-size: 25px;
+    position: relative;
+}
+
+.footer h3 {
+    font-size: 18px;
+            margin: 0px;
+
+}
+
+.footer p {
+    font-size: 14px;
 }
 
 .footer {
     width: 100%;
-    height: 200px;
-    background-color: gray;
-    display: flex;
-}
-.footer1 {
-    width: 40%;
-    height: 100%;
+    height: 300px;
     background-color: gray;
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    padding-top: 35px;
+}
+.footer1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 0px;
  
 }
 .footer2 {
-    width: 40%;
-    height: 100%;
-    background-color: gray;
+    width: 100%;
+    height: 60%;
     display: flex;
 }
 .footer2-1 {
     width: 50%;
     height: 100%;
-    background-color: gray;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.footer2-2 {
-    width: 50%;
-    height: 100%;
-    background-color: gray;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-
-.footer p, p2 {
-
-    font-size: 8px;
+    padding-left: 40px;
+    padding-right: 0px;
+    padding-top: 0px;  
 }
 .footer3 {
-    width: 20%;
-    height: 100%;
-    background-color: gray;
+    width: 100%;
+    height: 20%;
     display: flex;
-    justify-content: flex-end;
-    align-items: last baseline;
-    padding-right: 30px;
-    padding-bottom: 30px;
 }
-
 .footer3-1 {
-    width: 50px;
-    height: 50px;
+     width: 60px;
+    height: 60px;
     background-image: url(Img/Logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-style: solid;
-    border-color: white;
+
 }
+.footer2-2 {
+    visibility: hidden;
+}
+.footer-special {
+    visibility:visible;
+}
+
 
 .new-elektrik {
     width: 100%;
-    height: 1800px;
+    height: 2200px;
     position: relative;
     background-color: rgb(13, 13, 13);
+     border-style: solid;
+    border-color: rgb(0, 255, 255);
+    border-width: 1px;
 
 }
 
@@ -1996,22 +2085,21 @@ p2 {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-color: purple; 
+   
 }
 
 .new-elektrik1 {
 height: 35%;
 width: 100%;
     background-color: rgb(13, 13, 13);
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .new-elektrik2 {
 height: 25%;
 width: 100%;
-padding-top: 15px;
-padding-left: 55px;
+padding-top: 200px;
+padding-left: 15px;
 
    
 }
@@ -2019,6 +2107,8 @@ padding-left: 55px;
     width: 100%;
     height: 40%;
     background-color: none;
+    padding-top: 90px;
+    padding-right: 0px;
     
 }
 .highlight {
@@ -2056,7 +2146,7 @@ padding-left: 55px;
     cursor: pointer;
     z-index: 2;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(180, 190, 200);
 }
 .bigbox6 {
     width: 100%;
@@ -2065,13 +2155,13 @@ padding-left: 55px;
     display: flex;
     flex-direction: column;
   
-    padding-left: 80px;
+    padding-left: 40px;
     padding-top: 0px;
     position: relative;
     bottom: 70px;
 }
 .bigbox-detail {
-    width: 300px;
+    width: 270px;
     height: 200px;
     background-color: black;
     background-image: url(Img/elektrik\ eel\ process.png);
@@ -2085,9 +2175,11 @@ padding-left: 55px;
 }
 .new-avatar {
     width: 100%;
-    height: 1800px;
+    height: 2200px;
     position: relative;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(18, 20, 30);
+       border-style: solid;
+    border-color: rgb(0, 255, 255);
 }
 .new-avatar0 {
     width: 100%;
@@ -2095,9 +2187,7 @@ padding-left: 55px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-color: purple;
-    border-top: none;
+ 
     
 }
 
@@ -2106,14 +2196,15 @@ width: 100%;
 height: 35%;
     background-color: rgb(13, 13, 13);
     flex-direction: column;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .new-avatar2 {
 width: 100%;
 height: 25%;
 padding-top: 15px;
-padding-left: 55px;
+padding-left: 15px;
+padding-top: 140px;
 
    
 }
@@ -2121,26 +2212,18 @@ padding-left: 55px;
     width: 100%;
     height: 40%;
     background-color: none;
+        padding-top: 90px;
+
     
 }
 
-.avatar .small-button {
-    width: 120px;
-    height: 40px;
-    display: flex;
-    top: 300px;
-    
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    z-index: 3;
-    border-style: solid;
-    border-color: yellow;
-    right: 0px;
-
-
+.new-avatar .close-button {
+    margin-top: 70px;
 }
+
+
+
+
 
 
 
