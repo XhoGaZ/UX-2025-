@@ -584,8 +584,10 @@ span {
 }
 
 .image-holder {
-    width: 600px;
-    height: 650px;
+    width: 500px;
+    height: 550px;
+    background-color: black;
+
     background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -604,10 +606,11 @@ span {
 .image-holder::before {
     content: "";
     position: absolute;
-    top: -20%; left: -30%; right: 0; bottom: -50%;
-    background: url(Img/Elektrik.png)
-    top/cover no-repeat;
+    top: -30%; left: -30%; right: -50%; bottom: -10%;
+    background: url(Img/Home\ Page.svg);
+    background-repeat: no-repeat;
     transform: rotate(-45deg);
+    background-size: 100%;
 }
 
 .elektrik h3 {
@@ -886,9 +889,13 @@ padding-right: 30px;
     bottom: 0px;
 
 }
+.avatar .small-button {
+    top: 460px;
+    position: absolute;
+}
 .image-holder2 {
-    width: 600px;
-    height: 650px;
+    width: 500px;
+    height: 550px;
     background-color: none;
     z-index: 5;
     background-image: none;
@@ -906,10 +913,10 @@ padding-right: 30px;
 .image-holder2::before {
     content: "";
     position: absolute;
-    top: -50%; left: -0%; right: -100%; bottom: -100%;
-    background: url(Img/1.png)
+    top: -30%; left: -35%; right: 0%; bottom: 0%;
+    background: url(Img/Metaverse.svg);
     top/cover no-repeat;
-    transform: rotate(-45deg);
+    transform: rotate(0deg);
 }
 
 .new-avatar {
@@ -1690,7 +1697,7 @@ padding-top: 15px;
 
     width: 150px;
     height: 50px;
-    top: 400px;
+    top: 360px;
     z-index: 3;
     position: absolute;
     background-color: rgb(18, 20,30);
@@ -1703,7 +1710,7 @@ padding-top: 15px;
 
 .avatar {
     width: 100%;
-    height: 1050px;
+    height: 1150px;
     background-color: rgb(18, 20, 30);
     display: flex;
     flex-direction: column;
@@ -1757,16 +1764,14 @@ padding-top: 15px;
 .image-holder2 {
      width: 360px;
      height: 400px;
-    background-color: pink;
     z-index: 5;
-    background-image: url(Img/1.png);
     background-repeat: no-repeat;
     transform: rotate(45deg);
     background-size: cover;
     background-position: top;
     position: absolute;
     
-      margin-top: 30px;
+      margin-top: 70px;
         right: 120px;
 
 }
@@ -1775,7 +1780,7 @@ padding-top: 15px;
     width: 150px;
     height: 50px;
     display: flex;
-    top: 330px;
+    top: 400px;
     
     justify-content: center;
     align-items: center;
@@ -2221,9 +2226,6 @@ padding-top: 140px;
 
 }
 
-
-
-
 /********* PHONE *********/
 
 
@@ -2653,7 +2655,7 @@ padding-top: 140px;
 
 .avatar {
     width: 100%;
-    height: 1050px;
+    height: 1150px;
     background-color: rgb(18, 20, 30);
     display: flex;
     flex-direction: column;
@@ -2707,16 +2709,14 @@ padding-top: 140px;
 .image-holder2 {
      width: 360px;
      height: 400px;
-    background-color: pink;
     z-index: 5;
-    background-image: url(Img/1.png);
     background-repeat: no-repeat;
     transform: rotate(45deg);
     background-size: cover;
     background-position: top;
     position: absolute;
     
-      margin-top: 30px;
+      margin-top: 130px;
         right: 120px;
 
 }
@@ -2725,7 +2725,7 @@ padding-top: 140px;
     width: 150px;
     height: 50px;
     display: flex;
-    top: 330px;
+    top: 460px;
     
     justify-content: center;
     align-items: center;

@@ -14,9 +14,9 @@ function changeSlide(index) {
 
 function openBigBox(type) {
     let bigBox = document.getElementById( type + "bigbox");
-    bigBox.classList.add("active"); // Show the box
+    bigBox.classList.add("active"); 
     setTimeout(() => {
-        bigBox.classList.add("fade-in"); // Smooth fade-in
+        bigBox.classList.add("fade-in"); 
     }, 10);
 
     window.scrollTo(0,0);
@@ -24,10 +24,10 @@ function openBigBox(type) {
 
 function closeBigBox(type) {
     let bigBox = document.getElementById( type + "bigbox");
-    bigBox.classList.remove("fade-in"); // Start fade-out
+    bigBox.classList.remove("fade-in"); 
 
     setTimeout(() => {
-        bigBox.classList.remove("active"); // Hide after transition
+        bigBox.classList.remove("active"); 
     }, 500);
 
     setTimeout(() => {
@@ -74,44 +74,98 @@ hamburger.addEventListener("click", () => {
    offScreenMenu.classList.toggle("active");
 })
 
-document.getElementById("scroll-box").addEventListener("click", function() {
-    window.scrollTo({
-        top: 550,  
-        behavior: "smooth"
-      });
+document.getElementById("scroll-box").addEventListener("click", function(){
+    document.querySelector(".services").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
-  
+});
+
 document.getElementById("scroll-box1").addEventListener("click", function() {
-    window.scrollTo({
-    top: 1150,  
-    behavior: "smooth"
+    document.querySelector(".title-box").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
-    });
+});
+  
 
-    document.getElementById("scroll-box2").addEventListener("click", function() {
-    window.scrollTo({
-        top: 2250,  
-        behavior: "smooth"
-        });
-        });
 
-    document.getElementById("scroll-box3").addEventListener("click", function() {
-    window.scrollTo({
-        top: 2950,  
-        behavior: "smooth"
-        });
-        });
+ document.getElementById("scroll-box2").addEventListener("click", function() {
+  document.querySelector(".title-box2").scrollIntoView({
+    behavior: "smooth",
+    block: "start"  
+  });
+});
 
-        document.getElementById("scroll-box4").addEventListener("click", function() {
-            window.scrollTo({
-                top: 3350,  
-                behavior: "smooth"
-                });
-                });
+  document.getElementById("scroll-box3").addEventListener("click", function() {
+  document.querySelector(".about-me").scrollIntoView({
+    behavior: "smooth",
+    block: "start" 
+  });
+});
+
+      document.getElementById("scroll-box4").addEventListener("click", function() {
+  document.querySelector(".footer").scrollIntoView({
+    behavior: "smooth",
+    block: "start"  
+  });
+});
                           
-                     
-                  
-              
+   
+let tl = gsap.timeline();
+
+  tl.from(".feature-box", { 
+     y: -700,              
+    duration: 1,         
+    ease: "expo.out",  
+    repeat: 0, 
+  })
+
+ 
+  .from(".feature-box1", { 
+    y: -800,             
+    duration: 1,         
+    ease: "expo.out", 
+    repeat: 0, 
+  })
+
+
+  .from(".feature-box2", { 
+      y: -900,              
+    duration: 1,         
+    ease: "expo.out",  
+    repeat: 0,
+  });
+
+
+  
+   let tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".title-box",
+        start: "top +100px",
+
+    }
+   });
+
+  tl2.from(".elektrik h3", { 
+     opacity: 0,              
+    duration: 1,         
+  })
+
+ 
+  tl2.from(".elektrik p", { 
+    opacity: 0,             
+    duration: 1,         
+  })
+
+ 
+  .from(".elektrik .small-button", { 
+      opacity: 0,              
+    duration: 1,         
+  });
+
+
+ 
           
               
           
