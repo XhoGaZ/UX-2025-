@@ -26,9 +26,12 @@ h1{
     color: purple;
     font-family: zekton;
     text-transform: uppercase;
-    font-size: 43px;
+    font-size: 55px;
+    font-weight: bold;
     line-height: 1.2;
     letter-spacing: -0.03em;
+     white-space: nowrap;
+    display: inline-block;
 }
 
 h2 {
@@ -88,8 +91,8 @@ span {
 .header {
 
     width: 100%;
-    height: 75px;
-    background-color: white;
+    height: 100px;
+    background-color: black;
     display: flex;
     position: fixed;
     z-index: 6;
@@ -106,11 +109,11 @@ span {
 .header1-box {
     width: 60px;
     height: 60px;
-    background-image: url(Img/Logo.png);
+    background-image: url(Img/Logo!.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    cursor: pointer;
  
 }
 
@@ -118,11 +121,31 @@ span {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    background-color: white;
+    
     padding-right: 50px;
 }
+
+.header2-desktop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header2-desktop-small {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
 
 .hamburger-box {
     width: 60px;
@@ -133,6 +156,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none
 }
 
 
@@ -289,15 +313,13 @@ span {
 
 .feature {
     width: 100%;
-    height: 700px;
-
-    background:
-    linear-gradient(rgba(18, 20, 30, 0.5), rgba(18, 20, 30, 0.5)),
-    url(Img/Cyberpunk.jpg);
-    background-position: 70% 40%;
-    background-blend-mode: multiply;
+    height: 750px;
+    background-color: black;
     
-    position: relative;
+
+
+
+    
     z-index: 3;
    
     display: flex;
@@ -309,21 +331,21 @@ span {
     height: 3300px;
     position: absolute;
     z-index: 1;
-    bottom: -1050px;
-    left: -900px;
-    transform: rotate(90deg);
+    bottom: -2000px;
+    left: -1400px;
+    transform: rotate(140deg);
     pointer-events: none;
+    opacity: 0.5;
 
 }
 .feature1 {
     width: 40%;
     height: 100%;
     display: flex;
+
+    
     z-index: 2;
-     padding-left: 120px;
-    padding-top: 200px;
-    padding-right: 50px;
-    flex-direction: column;
+   
 
 
 }
@@ -332,12 +354,98 @@ span {
     height: 100%;
     display: flex;
     z-index: 1;
+    background-image: url(Img/Small!.jpg);
+    background-position: 30% 30%;
+    background-size: 100%;
 
 }
 
+.feature2 h3 {
+    position: relative;
+    top: 650px;
+    left: 650px;
+}
 
-.feature p {
-    padding-top: 30px;
+.feature3 { 
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.feature-text {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 10px;
+}
+.feature-text p {
+    position: absolute;
+    width: 650px;
+}
+.feature4 {
+    width: 450px;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    display: flex;
+    z-index: 1;
+}
+
+.feature-final {
+    width: 250px;
+    height: 50px;
+    background-color: teal;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.header .feature-final {
+    width: 200px;
+    top: 0px;
+    left: 60px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: teal;
+}
+
+.feature-final:hover {
+    width: 300px;
+    cursor: pointer;
+        transition: .5s;
+
+}
+.header .feature-final:hover{
+
+    width: 250px;
+}
+
+
+.feature-small0 {
+    width: 150px;
+    height: 100%;
+    display: flex;
+}
+.feature-small {
+    width: 50px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+.feature-small1 {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.feature-small1 p {
+    top: 0px;
 }
 
 .feature-box {
@@ -389,15 +497,13 @@ span {
     width: 100%;
     height: 550px;
     display: flex;
-    background: rgb(0, 255, 255);
-    background: linear-gradient(180deg, rgba(0, 255, 255, 1) 10%, rgba(18, 19, 20, 1) 100% );
+    background: linear-gradient(180deg, rgba(184, 115, 51, 1) 10%, rgba(0, 0, 0, 1) 100% );
     position: relative;
 }
 .services1 {
     width: 20%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -406,11 +512,13 @@ span {
    
 }
 .services h2 {
-    color: rgb(18, 20, 30);
+    color: white;
     margin: 0px;
 }
 .services p {
     color: white;
+    padding-left: 25px;
+    padding-top: 50px ;
 }
 .services2 h3 {
     padding-top: 10px;
@@ -427,58 +535,39 @@ span {
 }
 .service-box {
     width: 350px;
-    height: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
         margin: 5px;
   
     border-radius: 5px;
     z-index: 4;
     position: relative;
+    align-items: center;
     
 }
 
-
-
 .service-box2 {
-    width: 100%;
-    height: 30%;
+    width: 300px;
+    height: 75px;
+    background-color: rgb(165, 100, 40);
+    display: inline-block;
+    position: absolute;
+    top: -30px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;
-    border-radius: 5px 5px 0 0;
-    border-color: rgb(0, 255, 255);
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-;
-
-
+    justify-content: center;
+}
+.service-box2 h3 {
+    margin-top: -10px;
 }
 
-.service-box3 {
-    width: 80px;
-    height: 80px;
-    background-color: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-style: solid;
-    border-color: white;
-  
 
-}
-.service-box4 {
-    width: 100%;
-    height: 70%;
-    background-color: rgb(18, 20, 30);
-    padding-left: 20px;
-    padding-right: 30px;
-    border-radius: 0 0 5px 5px;
-}
+
+
+
+
 
 .title-box {
   
@@ -488,8 +577,8 @@ span {
     height: 150px;
     width: 100%;
     padding-top: 100px;
-    padding-left: 100px;
-    background-color: rgb(18, 20, 30);
+    padding-left: 110px;
+    background-color: rgb(0, 0, 0);
 }
 
 .title-box2 {
@@ -499,7 +588,11 @@ span {
     justify-content: center;
     height: 250px;
     width: 100%;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
+}
+
+.title-box h2, .title-box2 h2 {
+    color: rgb(165, 100, 40);
 }
 
 
@@ -525,26 +618,11 @@ span {
     right: 260px;
 }
 
-
-
-
-.title {
-    font-weight: bold;
-   
-}
-.title, .title1 h2 { 
-    color: rgb(0, 255, 255);
-    font-weight: bold;
-    font-size: 34px;
-    z-index: 3;
-
-}
-
 .elektrik {
 
     width: 100%;
-    height: 800px;
-    background-color: rgb(18, 20, 30);
+    height: 750px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     position: relative;
     z-index: 3;
@@ -559,7 +637,7 @@ span {
     width: 40%;
     height: 100%;
     bottom: 40px;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     padding-left: 120px;
     padding-top: 100px;
     position: relative;
@@ -572,7 +650,7 @@ span {
 
     width: 60%;
     height: 100%;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -597,7 +675,7 @@ span {
     transform: rotate(45deg);
     left: 200px;
     border-style: solid;
-    border-color: rgb(0, 255, 255);
+    border-color: rgb(165, 100, 40);
     bottom: 150px;
    
     z-index: 3;
@@ -624,8 +702,9 @@ span {
 
 }
 .small-button {
-    width: 200px;
-    height: 75px;
+    width: 250px;
+    height: 50px;
+    background-color: teal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -634,7 +713,8 @@ span {
     cursor: pointer;
     z-index: 5;
     border-style: solid;
-    border-color: rgb(180, 190, 200);
+    border-radius: 30px;
+    
 
 }
 .small-button:hover {
@@ -823,7 +903,8 @@ padding-right: 30px;
 
 .close-button {
      width: 200px;
-    height: 75px;
+    height: 50px;
+    background-color: teal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -831,14 +912,13 @@ padding-right: 30px;
     top: 100px;
     cursor: pointer;
     z-index: 1;
-    border-style: solid;
-    border-color: rgb(180, 190, 200);
+    border-radius: 30px;
 }
 
 .avatar {
     width: 100%;
     height: 700px;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     display: flex;
     position: relative;
     border-bottom: 1px solid transparent;
@@ -853,13 +933,13 @@ padding-right: 30px;
     left: 50%;
     width: 30%;
     height: 1px;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(165, 100, 40);
     transform: translate(-50%);
 }
 .avatar1 {
     width: 50%;
     height: 100%;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,7 +949,7 @@ padding-right: 30px;
 .avatar2 {
     width: 50%;
     height: 100%;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     padding-left: 80px;
     padding-right: 190px;
     padding-top: 70px;
@@ -908,7 +988,7 @@ padding-right: 30px;
     right: 100px;
     transform: rotate(45deg);
     border-style: solid;
-    border-color: rgb(0, 255, 255);
+    border-color: rgb(165, 100, 40);
 }
 .image-holder2::before {
     content: "";
@@ -961,7 +1041,7 @@ padding-top: 15px;
 .slideshow-container{
     width: 100%;
     height: 750px;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     position: relative;
     
 
@@ -978,7 +1058,7 @@ padding-top: 15px;
   content: "";
   position: absolute;
   inset: 0; 
-  background-color: rgb(18, 20, 30, 0.7);
+  background-color: rgb(0, 0, 0, 0.7);
 
   pointer-events: none; 
 }
@@ -1008,8 +1088,8 @@ padding-top: 15px;
 
     width: 45%;
     height: 45%;
-    background-color: rgb(18, 20, 30);
-    border-color: rgb(0, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(184, 115, 51);
 
     border-style: solid;
 
@@ -1037,20 +1117,21 @@ padding-top: 15px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-bottom: 415px;
-    left: 390px;
+    padding-bottom: 450px;
+    left: 300px;
 }
 .nav-box {
     height: 60px;
-    width: 60px;
+    width: 150px;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-style: solid;
-    border-color: rgb(180, 190, 200);
+    text-decoration: underline;
+    color: teal;
+   
 
 }
 .nav-box h3 {
@@ -1072,7 +1153,7 @@ padding-top: 15px;
     left: 20px;
     position: absolute;
     bottom: 240px;
-        background-color: rgb(0, 255, 255);
+        background-color: rgba(184, 115, 51);
 
     display: flex;
     align-items: center;
@@ -1080,7 +1161,7 @@ padding-top: 15px;
     border-radius: 5px;
 }
 .time h3 {
-    color: rgb(18, 20, 30);
+    color: white;
         margin-top: 0px;
 
 
@@ -1101,30 +1182,24 @@ padding-top: 15px;
     z-index: 1;
 }
 .about-me img {
-    width: 2200px;
-    height: 1000px;
+    width: 2600px;
+    height: 1600px;
     position: absolute;
-    right: 300px;
-    transform: rotate(220deg);
-    top: 3400px;
+    right: -1100px;
+    transform: rotate(0deg);
+    top: 2700px;
     z-index: 2;
     pointer-events: none; 
+    opacity: 0.7;
 }
 
 .about-me  {
 
     width: 100%;
     height: 850px;
-    background-color: rgb(18, 20, 30);
+    background-color: rgb(0, 0, 0);
     display: flex;
-    border-style: solid;
-    border-color: rgb(0, 255, 255);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-width: 5px;
     
-   
 } 
 
 .about-me h3 {
@@ -1148,8 +1223,8 @@ padding-top: 15px;
     height: 100%;
     background-image: url(Img/Me.webp);
     background-repeat: no-repeat;
-    background-position: 10px 40px;
-    background-size: cover;
+    background-position: 80px 200px;
+    background-size: 70%;
         display: flex;
     align-items: center;
     padding-left: 120px;
@@ -1201,9 +1276,9 @@ padding-top: 15px;
     z-index: 1;
 }
 .about-me h2 {
-    color: white;
+    color: rgb(165, 100, 40);
     position: relative;
-    right: 260px;
+    right: 250px;
  
 }
 .footer {
@@ -2233,6 +2308,7 @@ padding-top: 140px;
 
     h1 {
         font-size: 36px;
+             white-space: wrap;
     }
 
     h2 {
@@ -2254,7 +2330,7 @@ padding-top: 140px;
 
         width: 100%;
         height: 50px;
-        background-color: white;
+        background-color: black;
         display: flex;
         position: fixed;
         z-index: 50;
@@ -2270,13 +2346,15 @@ padding-top: 140px;
     .header1-box {
         width: 40px;
         height: 40px;
-        background-image: url(Img/Logo.png);
+        background-image: url(Img/Logo!.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-       
      
     }
+
+
+
     .header2 {
 
         padding-right: 30px;
@@ -2286,50 +2364,61 @@ padding-top: 140px;
     .hamburger-box {
         width: 40px;
         height: 40px;
-        background-color: white;
         z-index: 45;
         position: fixed;
         display: flex;
         align-items: center;
+        right: 20px;
     }
 
     .hamburger {
 
         width: 40px;
         height: 40px;
+        background-color: black;
     }
+
+    .hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.header2-desktop {
+    display: none;
+}
     .feature {
     width: 100%;
-    height: 600px;
+    height: 650px;
+    background-color: black;
 
-    background:
-    linear-gradient(rgba(18, 20, 30, 0.5), rgba(18, 20, 30, 0.5)),
-    url(Img/Cyberpunk.jpg);
-    background-position: 60% 30%;
-    background-blend-mode: multiply;
+  
     
     position: relative;
     z-index: 3;
    
     display: flex;
-    flex-direction: column;
 }
 .feature1 {
     width: 100%;
     height: 40%;
     display: flex;
     z-index: 2;
-     padding-left: 40px;
-    padding-top: 120px;
-    padding-right: 120px;
-    flex-direction: column;
+
 }
 .feature2 {
     width: 100%;
     height: 60%;
+    background-position: 90% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     z-index: 1;
-    padding-top: 30px;
 }
 .feature p {
     padding-top: 0px;
@@ -2340,50 +2429,57 @@ padding-top: 140px;
 
 }
 
-.feature-box {
-    width: 120px;
-    height: 120px;
-    background-color: none;
-    border-style: solid;
-    border-color: rgb(0, 255, 255);
-    border-width: 1px;
+.feature3 {
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 220px;
-    left: 40px;
+    flex-direction: column;
 }
 
-.feature-box1 {
-    width: 120px;
-    height: 120px;
-    background-color: none;
+.feature-text {
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+.feature-text p {
+    position: absolute;
+    width: 280px;
+}
+.feature4 {
+    width: 360px;
+    height: 50px;
+    position: relative;
+    top: 340px;
+    right: 20px;
+    display: flex;
+}
+.feature-final {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 440px;
+}
+.feature-final:hover {
+    width: 250px;
+}
+.feature-final h3 {
+    margin: 0px;
+}
+.feature-small0 {
+    width: 100px;
+}
 
-    border-style: solid;
-    border-color: rgb(0, 255, 255);
-    border-width: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 120px;
-    left: 0px;
+.feature-small {
+    width: 30%;
 }
-.feature-box2 {
-    width: 120px;
-    height: 120px;
-    background-color: none;
-    border-style: solid;
-    border-color: rgb(0, 255, 255);
-    border-width: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 50px;
-    left: 20px;
+.feature-small1 {
+    width: 70%;
+    padding-left: 0px;
 }
+
+
 
     .off-screen-menu {
     background-color: rgb(18, 20, 30);
@@ -2460,22 +2556,22 @@ padding-top: 140px;
 
   .services {
     width: 100%;
-    height: 1150px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     background: rgb(0, 255, 255);
-    background: linear-gradient(180deg, rgba(0, 255, 255, 1) 10%, rgba(18, 19, 20, 1) 100% );
+    background: linear-gradient(180deg, rgba(184, 115, 51, 1) 10%, rgba(0, 0, 0, 1) 100% );
     position: relative;
 }
 
     .services1 {
         width: 100%;
-        height: 10%;
+        height: 15%;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
          padding-left: 0px;
-         padding-top: 0px;
+         padding-top: 20px;
         
         position: relative;    
     
@@ -2485,7 +2581,13 @@ padding-top: 140px;
 
         margin: 0px;
         z-index: 4;
+        padding-top: 0px;
         
+    }
+    .services p {
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-right: 20px;
     }
 
     .services2 {
@@ -2502,44 +2604,34 @@ padding-top: 140px;
 
     .service-box {
     width: 300px;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-        margin: 5px;
+        margin: 30px;
   
     border-radius: 5px;
     z-index: 4;
     position: relative;
+    background-color: black;
     
 }
 
     .service-box2 {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-    border-radius: 5px 5px 0 0;
-}
-
-.service-box3 {
-    width: 70px;
+    width: 250px;
     height: 50px;
-    background-color: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    border-radius: 0px;
 }
 .service-box4 {
-    width: 100%;
-    height: 75%;
-    background-color: rgb(18, 20, 30);
-    padding-left: 20px;
-    padding-top: 10px;
-    border-radius: 0 0 5px 5px;
+    background-color: black;
+    border-radius: 5px;
 }
+
+
+
 
 .title-box {
   

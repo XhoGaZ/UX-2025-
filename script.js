@@ -110,7 +110,8 @@ document.getElementById("scroll-box1").addEventListener("click", function() {
     block: "start"  
   });
 });
-                          
+
+                   
    
 let tl = gsap.timeline();
 
@@ -163,6 +164,45 @@ let tl = gsap.timeline();
       opacity: 0,              
     duration: 1,         
   });
+
+  document.getElementById("desktop1").addEventListener("click", function() {
+  document.querySelector(".title-box2").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+ document.getElementById("desktop2").addEventListener("click", function() {
+  document.querySelector(".about-me").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+ document.querySelector(".feature-final").addEventListener("click", function() {
+  document.querySelector(".title-box").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+ document.querySelector(".feature3, feature-final ").addEventListener("click", function() {
+  document.querySelector(".title-box").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+ document.querySelector(".header1-box").addEventListener("click", function() {
+  document.querySelector(".feature").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+
+
+
+
+
+
+
+
 
 
  
